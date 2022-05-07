@@ -38,7 +38,8 @@ body
   }
   20%{
     font-size: 125px;
-    color: aqua;
+    color: yellow;
+    text-shadow: 5px 5px 1px red;
   }
   50%{
     font-size: 125px;
@@ -83,92 +84,8 @@ body
   }
 }
 
-/* ===== RESPONSIVE ===== */
-/* @media screen and (max-width: 1259px)
-{
-  @keyframes wordName {
-    0%{
-      font-size: 0px;
-      color: black;
-    }
-    20%{
-      font-size: 95px;
-      color: yellow;
-      text-shadow: 2px 2px 3px red;
-    }
-    99.9%{
-      color: yellow;
-      font-size: 0;
-      text-shadow: 2px 2px 3px red;
-    }
-    100%{
-      display : none;
-    }
-  }
-}
-@media screen and (max-width: 950px)
-{
-  @keyframes wordStar {
-    0%{
-      margin-top: 40%;
-      font-size: 0px;
-      color: black;
-    }
-    20%{
-      margin-top: 20%;
-      font-size: 35px;
-      color: yellow;
-      text-shadow: 2px 2px 3px red;
-    }
-    99.9%{
-      margin-top: 5%;
-      color: yellow;
-      font-size: 0;
-      text-shadow: 2px 2px 3px red;
-    }
-    100%{
-      display : none;
-    }
-  }
-  @keyframes wordName {
-    0%{
-      font-size: 0px;
-      color: black;
-    }
-    20%{
-      font-size: 55px;
-      color: yellow;
-      text-shadow: 2px 2px 3px red;
-    }
-    99.9%{
-      color: yellow;
-      font-size: 0;
-      text-shadow: 2px 2px 3px red;
-    }
-    100%{
-      display : none;
-    }
-  }
-  @keyframes wordIn {
-    0%{
-      font-size: 0px;
-      color: black;
-    }
-    20%{
-      font-size: 30px;
-      color: yellow;
-      text-shadow: 2px 2px 2px red;
-    }
-    99.9%{
-      color: yellow;
-      font-size: 0;
-      text-shadow: 2px 2px 2px red;
-    }
-    100%{
-      display : none;
-    }
-  }
-} */
+
+/* ===== SCROLL TEXTE ===== */
 .fade {
   position: relative;
   width: 100%;
@@ -185,7 +102,7 @@ body
   height: 800px;
   color: #feda4a;
   /* font-family: 'Kaushan Script', sans-serif; */
-  font-size: 500%;
+  font-size: 664%;
   font-weight: 600;
   letter-spacing: 3px;
   
@@ -230,4 +147,193 @@ body
   {
     display: none;
   }
+}
+/* ===== RESPONSIVE wordPro & wordPresent ===== */
+@media screen and (max-width: 1259px)
+{
+  @keyframes wordProd {
+    0%{
+      font-size: 0px;
+      color: black;
+    }
+    20%{
+      font-size: 90px;
+      color: aqua;
+    }
+    50%{
+      font-size: 90px;
+      color: black;
+      text-shadow: 2px 2px 5px aqua;
+    }
+    99.9%{
+      font-size: 90px;
+      color: black;
+    }
+    100%{
+      display: none;
+    }
+  }
+}
+@keyframes wordPresent 
+{
+  0%{
+    font-size: 0px;
+    color: black;
+  }
+  20%{
+    font-size: 45px;
+    color: white;
+  }
+  99.9%{
+    font-size: 45px;
+    color: black;
+  }
+  100%{
+    display: none;
+  }
+}
+.star-wars
+{
+  font-size: 337%;
+}
+@media screen and (max-width: 915px)
+{
+  @keyframes wordProd {
+    0%{
+      font-size: 0px;
+      color: black;
+    }
+    20%{
+      font-size: 70px;
+      color: aqua;
+    }
+    50%{
+      font-size: 70px;
+      color: black;
+      text-shadow: 2px 2px 5px aqua;
+    }
+    99.9%{
+      font-size: 70px;
+      color: black;
+    }
+    100%{
+      display: none;
+    }
+  }
+}
+@keyframes wordPresent 
+{
+  0%{
+    font-size: 0px;
+    color: black;
+  }
+  20%{
+    font-size: 35px;
+    color: white;
+  }
+  99.9%{
+    font-size: 35px;
+    color: black;
+  }
+  100%{
+    display: none;
+  }
+}
+.star-wars
+{
+  font-size: 239%;
+}
+@media screen and (max-width: 700px)
+{
+  @keyframes wordProd {
+    0%{
+      font-size: 0px;
+      color: black;
+    }
+    20%{
+      font-size: 40px;
+      color: aqua;
+    }
+    50%{
+      font-size: 40px;
+      color: black;
+      text-shadow: 2px 2px 5px aqua;
+    }
+    99.9%{
+      font-size: 40px;
+      color: black;
+    }
+    100%{
+      display: none;
+    }
+  }
+}
+@keyframes wordPresent 
+{
+  0%{
+    font-size: 0px;
+    color: black;
+  }
+  20%{
+    font-size: 20px;
+    color: white;
+  }
+  99.9%{
+    font-size: 20px;
+    color: black;
+  }
+  100%{
+    display: none;
+  }
+}
+.star-wars
+{
+  font-size: 174%;
+}
+@media screen and (max-width: 400px)
+{
+  @keyframes wordProd {
+    0%{
+      font-size: 0px;
+      color: black;
+    }
+    20%{
+      font-size: 25px;
+      color: aqua;
+    }
+    50%{
+      font-size: 25px;
+      color: black;
+      text-shadow: 2px 2px 5px aqua;
+    }
+    99.9%{
+      font-size: 25px;
+      color: black;
+    }
+    100%{
+      display: none;
+    }
+  }
+}
+@keyframes wordPresent 
+{
+  0%{
+    font-size: 0px;
+    color: black;
+  }
+  20%{
+    font-size: 20px;
+    color: white;
+  }
+  99.9%{
+    font-size: 20px;
+    color: black;
+  }
+  100%{
+    display: none;
+  }
+}
+.star-wars
+{
+  font-size: 80%;
 }
