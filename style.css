@@ -190,7 +190,7 @@ body
   letter-spacing: 3px;
   
   line-height: 150%;
-  perspective: 420px;
+  perspective: 390px;
   text-align: justify;
 }
 .crawl {
@@ -213,12 +213,18 @@ body
 
 @keyframes crawl {
   0% {
-    top: -100px;
+    top: -250px;
     transform: rotateX(20deg)  translateZ(0);
+    opacity: 1;
   }
-  99.9% { 
+  99.8% { 
     top: -6000px;
     transform: rotateX(25deg) translateZ(-2500px);
+    opacity: 1;
+    
+  }
+  99.9%{
+    opacity: 0;
   }
   100%
   {
