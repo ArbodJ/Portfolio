@@ -2,338 +2,449 @@ body
 {
   margin: 0 auto;
 }
-/* ===== ANIMATION ===== */
-/* _____ Anim background ______ */
+/* 
+======================== 
+-----| ANIMATION |------ 
+======================== 
+*/
+/* ===== Anim background ===== */
 #animTitle, body
 {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
   animation: 1s backGrd 1 ease-out both;
-  animation-delay: 58.5s;
+  animation-delay: 17.5s;
+  animation-iteration-count: 1;
   overflow: hidden;
 }
-@keyframes backGrd {
+@keyframes backGrd 
+{
   0%{
     background-color: black;
   }
-  100%{
+  99.9%{
     background-color: white;
   }
+  100%{
+    display: none;
+  }
 }
-/* _____ Anim Production _____ */
+/* 
+=============================
+-----| INTRO ANIMATION |-----
+============================= 
+*/
 #prod
 {
+  position: relative;
+  z-index: 1;
+  margin: 18% 0 0 0;
   display: flex;
   justify-content: center;
-  width: 75%;
-  margin: auto;
-  margin-top: 20%;
-  font-size: 0px;
-  position: relative;
-  animation: 7.5s wordProd 1 ease-in-out both;
+  width: 100%;
+  height: 100%;
+  font-size: 8vw;
+  font-family: 'Black Ops One', sans-serif;
+  animation: 9s wordProd 1 ease-in-out forwards;
+  opacity: 0;
+  transform: scale(0,0);
 }
 @keyframes wordProd
 {
   0%{
-    font-size: 0px;
-    color: black;
+    transform: scale(1,1);
+    opacity: 0;
+    color: aqua;
   }
-  20%{
-    font-size: 125px;
-    color: yellow;
-    text-shadow: 5px 5px 1px red;
+  30%{
+    opacity: 1;
+    color: aqua;
+    text-shadow: 3px 3px 7px aqua;
   }
-  50%{
-    font-size: 125px;
+  60%{
+    transform: scale(1,1);
     color: black;
-    text-shadow: 2px 2px 5px aqua;
+    text-shadow: 2px 2px 2px aqua;
   }
   99.9%{
-    font-size: 125px;
+    transform: scale(1,1);
     color: black;
   }
   100%{
     display: none;
   }
-}
+} 
 #present
 {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
-  width: 75%;
-  margin: auto;
-  font-size: 0px;
-  position: relative;
-  animation: 5.5s wordPresent 1 ease-in-out both;
-  animation-delay: 2s;
-}
-@keyframes wordPresent 
-{
-  0%{
-    font-size: 0px;
-    color: black;
-  }
-  20%{
-    font-size: 55px;
-    color: white;
-  }
-  99.9%{
-    font-size: 55px;
-    color: black;
-  }
-  100%{
-    display: none;
-  }
-}
-
-
-/* ===== SCROLL TEXTE ===== */
-.fade {
-  position: relative;
+  margin: 0 auto;
   width: 100%;
-  min-height: 30vh;
-  top: -160px;
-  /* background-image: linear-gradient(0deg, transparent, black 75%); */
-  /* z-index: 1; */
+  height: 100%;
+  font-size: 5vw;
+  animation: 8s wordPresent 1 ease-in-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+  transform: scale(0,0);
 }
-
-.star-wars {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height: 800px;
-  color: #feda4a;
-  /* font-family: 'Kaushan Script', sans-serif; */
-  font-size: 664%;
-  font-weight: 600;
-  letter-spacing: 3px;
-  
-  line-height: 150%;
-  perspective: 390px;
-  text-align: justify;
-}
-.crawl {
-  position: relative;
-  top: 99999px;
-  transform-origin: 50% 100%;
-  animation: crawl 50s linear;
-  animation-delay: 7.8s;
-}
-
-.crawl > .title {
-  font-size: 90%;
-  text-align: center;
-}
-
-.crawl > .title h1 {
-  margin: 0 0 100px;
-  text-transform: uppercase;
-}
-
-@keyframes crawl {
-  0% {
-    top: -250px;
-    transform: rotateX(20deg)  translateZ(0);
-    opacity: 1;
-  }
-  99.8% { 
-    top: -6000px;
-    transform: rotateX(25deg) translateZ(-2500px);
-    opacity: 1;
-    
-  }
-  99.9%{
+@keyframes wordPresent 
+{
+  0%{
     opacity: 0;
-  }
-  100%
-  {
-    display: none;
-  }
-}
-/* ===== RESPONSIVE wordPro & wordPresent ===== */
-@media screen and (max-width: 1259px)
-{
-  @keyframes wordProd {
-    0%{
-      font-size: 0px;
-      color: black;
-    }
-    20%{
-      font-size: 90px;
-      color: aqua;
-    }
-    50%{
-      font-size: 90px;
-      color: black;
-      text-shadow: 2px 2px 5px aqua;
-    }
-    99.9%{
-      font-size: 90px;
-      color: black;
-    }
-    100%{
-      display: none;
-    }
-  }
-}
-@keyframes wordPresent 
-{
-  0%{
-    font-size: 0px;
-    color: black;
-  }
-  20%{
-    font-size: 45px;
+    transform: scale(1,1);
     color: white;
   }
-  99.9%{
-    font-size: 45px;
+  30%{
+    transform: scale(1,1);
+    opacity: 1;
+    color: white;
+  }
+  60%{
+    transform: scale(1,1);
     color: black;
+    text-shadow: 2px 2px 3px white;
+  }
+  99.9%{
+    transform: scale(1,1);
+    color: black;
+    text-shadow: 2px 2px 5px white;
   }
   100%{
     display: none;
   }
 }
-.star-wars
+/* 
+==============================
+-----| RESPONSIVE INTRO -----|
+============================== 
+*/
+@media screen and (max-width: 900px)
 {
-  font-size: 337%;
-}
-@media screen and (max-width: 915px)
-{
-  @keyframes wordProd {
-    0%{
-      font-size: 0px;
-      color: black;
-    }
-    20%{
-      font-size: 70px;
-      color: aqua;
-    }
-    50%{
-      font-size: 70px;
-      color: black;
-      text-shadow: 2px 2px 5px aqua;
-    }
-    99.9%{
-      font-size: 70px;
-      color: black;
-    }
-    100%{
-      display: none;
-    }
+  #prod{
+    margin: 33% 0 0 0;
   }
 }
-@keyframes wordPresent 
+@media screen and (max-width: 695px)
+{
+  #prod{
+    margin: 49% 0 0 0;
+  }
+}
+@media screen and (max-width: 500px)
+{
+  #prod{
+    margin: 65% 0 0 0;
+  }
+}
+@media screen and (max-width: 340px)
+{
+  #prod{
+    margin: 91% 0 0 0;
+  }
+}
+/*
+===========================
+-----| ANIMATION NOM |-----
+===========================
+*/
+#nom
+{
+  position: relative;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0,0);
+  animation: nm 1s linear 1 both;
+  animation-delay: 16s;
+}
+@keyframes nm 
 {
   0%{
-    font-size: 0px;
-    color: black;
-  }
-  20%{
-    font-size: 35px;
-    color: white;
+    margin: -18% 0 0 0;
+    background-color: black;
+    transform: scale(1,1);
+    opacity: 1;
   }
   99.9%{
-    font-size: 35px;
-    color: black;
+    margin: -18% 0 0 0;
+    background-color: black;
+    transform: scale(1,1);
+    opacity: 1;
   }
   100%{
     display: none;
   }
 }
-.star-wars
+#n1
 {
-  font-size: 239%;
+  position: relative;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5vw; 
+  transform: scale(0,0);
+  opacity: 0;
+  animation: name 7s ease-in-out 9s both;
 }
-@media screen and (max-width: 700px)
+#n2
 {
-  @keyframes wordProd {
-    0%{
-      font-size: 0px;
-      color: black;
-    }
-    20%{
-      font-size: 40px;
-      color: aqua;
-    }
-    50%{
-      font-size: 40px;
-      color: black;
-      text-shadow: 2px 2px 5px aqua;
-    }
-    99.9%{
-      font-size: 40px;
-      color: black;
-    }
-    100%{
-      display: none;
-    }
-  }
+  position: relative;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5vw;
+  transform: scale(0,0);
+  opacity: 0;
+  animation: name 7s ease-in-out 9.2s both;
 }
-@keyframes wordPresent 
+#n3
+{
+  position: relative;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5vw;
+  transform: scale(0,0);
+  opacity: 0;
+  animation: name 7s ease-in-out 9.4s both;
+}
+#n4
+{
+  position: relative;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5vw;
+  transform: scale(0,0);
+  opacity: 0;
+  animation: name 7s ease-in-out 9.6s both;
+}
+#n5
+{
+  position: relative;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5vw;
+  transform: scale(0,0);
+  opacity: 0;
+  animation: name 7s ease-in-out 9.8s both;
+}
+@keyframes name
 {
   0%{
-    font-size: 0px;
-    color: black;
+    transform: scale(1,1);
+    opacity: 1;
+    left: -1180px;
+    top: -150px;
+    text-shadow: 2px 2px 3px green;
+  }
+  11%{
+    transform: scale(1,1);
+    text-shadow: 2px 2px 3px yellow;
+  }
+  17%{
+    transform: scale(1,1);
+    left: 25px;
+    top: 15px;
   }
   20%{
-    font-size: 20px;
-    color: white;
+    transform: scale(1,1);
+    left: 0;
+    top: 0;
+  }
+  22%{
+    transform: scale(1,1);
+    text-shadow: 2px 2px 3px aqua;
+  }
+  33%{
+    transform: scale(1,1);
+    text-shadow: 2px 2px 3px blue;
+  }
+  40%{
+    transform: scale(1,1);
+    text-shadow: 2px 2px 3px aqua;
+  }
+  44%{
+    transform: scale(1,1);
+    text-shadow: 2px 2px 3px blue;
+  }
+  55%{
+    transform: scale(1,1);
+    text-shadow: 2px 2px 3px aqua;;
+  }
+  66%{
+    transform: scale(1,1);
+    text-shadow: 2px 2px 3px blue;
+  }
+  77%{
+    transform: scale(1,1);
+    text-shadow: 2px 2px 3px aqua;
+  }
+  88%{
+    transform: scale(1,1);
+    opacity: 1;
+    text-shadow: 2px 2px 3px blue;
   }
   99.9%{
-    font-size: 20px;
-    color: black;
+    transform: scale(0,0);
+    opacity: 0;
+    text-shadow: 2px 2px 3px aqua;
   }
   100%{
     display: none;
   }
 }
-.star-wars
+/*
+==============================
+-----| ANIMATION PRENOM |-----
+==============================
+*/
+#prenom
 {
-  font-size: 174%;
+  position: relative;
+  text-align: center;
+  margin: 4% 0 0 0;
+  transform: scale(0,0);
+  animation: pnm 1s linear 1 both;
+  animation-delay: 16s;
 }
-@media screen and (max-width: 400px)
-{
-  @keyframes wordProd {
-    0%{
-      font-size: 0px;
-      color: black;
-    }
-    20%{
-      font-size: 25px;
-      color: aqua;
-    }
-    50%{
-      font-size: 25px;
-      color: black;
-      text-shadow: 2px 2px 5px aqua;
-    }
-    99.9%{
-      font-size: 25px;
-      color: black;
-    }
-    100%{
-      display: none;
-    }
-  }
-}
-@keyframes wordPresent 
+@keyframes pnm 
 {
   0%{
-    font-size: 0px;
-    color: black;
-  }
-  20%{
-    font-size: 20px;
-    color: white;
+    background-color: black;
+    transform: scale(1,1);
+    opacity: 1;
   }
   99.9%{
-    font-size: 20px;
-    color: black;
+    background-color: black;
+    transform: scale(1,1);
+    opacity: 1;
   }
   100%{
     display: none;
   }
 }
-.star-wars
+#pn1
 {
-  font-size: 80%;
+  position: relative;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5vw;
+  transform: scale(0,0);
+  opacity: 0;
+  animation: pname 7s ease-in-out 9s both;
+}
+#pn2
+{
+  position: relative;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5vw;
+  transform: scale(0,0);
+  opacity: 0;
+  animation: pname 7s ease-in-out 9.2s both;
+}
+#pn3
+{
+  position: relative;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5vw;
+  transform: scale(0,0);
+  opacity: 0;
+  animation: pname 7s ease-in-out 9.4s both;
+}
+#pn4
+{
+  position: relative;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5vw;
+  transform: scale(0,0);
+  opacity: 0;
+  animation: pname 7s ease-in-out 9.6s both;
+}
+#pn5
+{
+  position: relative;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5vw;
+  transform: scale(0,0);
+  opacity: 0;
+  animation: pname 7s ease-in-out 9.8s both;
+}
+#pn6
+{
+  position: relative;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5vw;
+  transform: scale(0,0);
+  opacity: 0;
+  animation: pname 7s ease-in-out 10s both;
+}
+@keyframes pname
+{
+  0%{
+    transform: scale(1,1);
+    opacity: 1;
+    right: -1180px;
+    bottom: -150px;
+    text-shadow: 3px 3px 5px blue;
+  }
+  11%{
+    transform: scale(1,1);
+    text-shadow: 3px 3px 5px white;
+  }
+  17%{
+    transform: scale(1,1);
+    right: 25px;
+    bottom: 15px;
+  }
+  20%{
+    transform: scale(1,1);
+    right: 0;
+    bottom: 0;
+  }
+  22%{
+    transform: scale(1,1);
+    text-shadow: 3px 3px 3px blue;
+  }
+  33%{
+    transform: scale(1,1);
+    text-shadow: 3px 3px 3px aqua;
+  }
+  40%{
+    transform: scale(1,1);
+    text-shadow: 3px 3px 3px blue;
+  }
+  44%{
+    transform: scale(1,1);
+    text-shadow: 3px 3px 3px aqua;
+  }
+  55%{
+    transform: scale(1,1);
+    text-shadow: 3px 3px 3px blue;
+  }
+  66%{
+    transform: scale(1,1);
+    text-shadow: 3px 3px 3px aqua;
+  }
+  77%{
+    transform: scale(1,1);
+    text-shadow: 3px 3px 3px blue;
+  }
+  88%{
+    transform: scale(1,1);
+    opacity: 1;
+    text-shadow: 3px 3px 3px aqua;
+  }
+  99.9%{
+    transform: scale(1,1);
+    opacity: 0;
+    text-shadow: 3px 3px 3px blue;
+  }
+  100%{
+    display: none;
+  }
 }
