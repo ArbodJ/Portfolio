@@ -193,7 +193,7 @@
   0%{
     transform: scale(1,1);
     opacity: 1;
-    left: -1280px;
+    left: -1580px;
     top: -350px;
     color: orange;
     text-shadow: 2px 2px 3px red;
@@ -328,7 +328,7 @@
   0%{
     transform: scale(1,1);
     opacity: 1;
-    right: -1280px;
+    right: -1580px;
     bottom: -250px;
     color: yellow;
     text-shadow: 2px 2px 3px orangered;
