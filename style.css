@@ -408,31 +408,40 @@ body{
 header
 {
   margin: 0 auto;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background: linear-gradient(#3737f9, #fff);
+  background: linear-gradient(green, #fff);
 }
 #arbod
 {
-  
-  font-size: 3.7vw;
+  color: white;
+  font-size: 3.9vw;
   font-family: 'New Tegomin', serif;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-p
+#jerome
+{
+  color: white;
+  font-size: 3.9vw;
+  font-family: 'New Tegomin', serif;
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+}
+.hdrp
 {
   margin: 0 0;
 }
 #career
 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: white;
+  color: #a7bfa7;
+  text-shadow: 2px 2px 2px green;
   border: 5px double black;
   padding: 5px;
   border-radius: 30px;
@@ -445,11 +454,11 @@ p
   left: 20.5vw;
   top: 0.5vw;
   border-radius: 3px;
-  background: linear-gradient(to bottom, red 2%,#ffcbcb 40%,red);
-  box-shadow: 1px 1px 9px red;
-  height: 0.3vw;
-  animation: laserRed1 1.5s ease-in-out infinite alternate;
-  animation-delay: 17.6s;
+  background: linear-gradient(to bottom, red 1%,#ffd6d6 40%,red );
+  box-shadow: 0px 0px 9px red;
+  height: 0.4vw;
+  animation: laserRed1 3s ease-in-out infinite alternate;
+  /* animation-delay: 17.6s; */
 }
 @keyframes laserRed1 
 {
@@ -466,14 +475,14 @@ p
 #laser2 
 {
   position: absolute;
-  right: 23.5vw;
+  right: 24vw;
   top: 4.6vw;
   border-radius: 3px;
   background: linear-gradient(to bottom, #6161ff 1%, #e4e4fd 30%, #6161ff);
   box-shadow: 0px 0px 9px #0000d1;
   height: 0.3vw;
-  animation: laserRed2 1.5s ease-in-out infinite alternate;
-  animation-delay: 17.6s;
+  animation: laserRed2 3s ease-in-out infinite alternate;
+  /* animation-delay: 17.6s; */
 }
 @keyframes laserRed2 
 {
@@ -486,9 +495,4 @@ p
   100%{
     width: 43vw;
   }
-}
-#jerome
-{
-  font-size: 3.7vw;
-  font-family: 'New Tegomin', serif;
 }
