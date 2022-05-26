@@ -1,0 +1,209 @@
+/*-----| PAGE PORTFOLIO|-----*/
+body{
+  margin: 0 auto;
+}
+/*-----| ENTETE DE PAGE|-----*/
+header
+{
+  margin: 0 auto;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: linear-gradient(green, #fff);
+}
+#arbod
+{
+  color: white;
+  font-size: 3.9vw;
+  font-family: 'New Tegomin', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#jerome
+{
+  color: white;
+  font-size: 3.9vw;
+  font-family: 'New Tegomin', serif;
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+}
+.hdrp
+{
+  margin: 0 0;
+}
+#career
+{
+  background-color: white;
+  color: #a7bfa7;
+  text-shadow: 2px 2px 2px green;
+  border: 5px double black;
+  padding: 5px;
+  border-radius: 30px;
+  font-size: 3.7vw;
+  font-family: 'Black Ops One', sans-serif;
+}
+#laser1 
+{
+  position: absolute;
+  left: 20.5vw;
+  top: 0.5vw;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, red 1%,#ffd6d6 50%,red );
+  box-shadow: 0px 0px 9px red;
+  height: 0.4vw;
+  animation: laserRed1 3s ease-in-out infinite alternate;
+  animation-delay: 17.6s;
+}
+@keyframes laserRed1 
+{
+  0%{
+    width: 0vw;
+  }
+  10%{
+    width: 0vw;
+  }
+  100%{
+    width: 43vw;
+  }
+}
+#laser2 
+{
+  position: absolute;
+  right: 24vw;
+  top: 4.6vw;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, #6161ff 1%, #e4e4fd 50%, #6161ff);
+  box-shadow: 0px 0px 9px #0000d1;
+  height: 0.3vw;
+  animation: laserRed2 3s ease-in-out infinite alternate;
+  animation-delay: 17.6s;
+}
+@keyframes laserRed2 
+{
+  0%{
+    width: 0vw;
+  }
+  10%{
+    width: 0vw;
+  }
+  100%{
+    width: 43vw;
+  }
+}
+/*RESPONSIVE Entete de page*/
+@media screen and (max-width: 800px)
+{
+  header {
+    flex-direction: column;
+  }
+}
+/*-----| CORPS DE PAGE |-----*/
+/*GENERALITÉ*/
+#middle{
+  width: 100%;
+  height: 650px;
+  
+  display: flex;
+  flex-direction: row;
+  
+}
+/*1ERE PARTIE : TEXTE DESCRIPTION*/
+#part1
+{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, white 1%, #6e6ef1 50%, white);
+}
+h1 p 
+{
+  display: flex;
+  flex-direction: column;
+}
+#part1 h1
+{
+  font-size: 2vw;
+  text-align: center;
+}
+#part1 p
+{
+  margin:  0 40px 0 40px;
+  font-size: 1.7vw;
+  text-align: justify;
+}
+/*2ÈME PATIE : ICON - LIENS*/
+#part2
+{
+  width: 350vw;
+  height: 100%;
+}
+#part2 .backImg{
+  width: 80vw;
+  height: 100%;
+}
+
+#cv
+{
+  border: 1px solid yellow;
+  width: 48px;
+  height: 48px;
+}
+#icon
+{
+  background-image: url("images/backScreen.jpg");
+  height: 100%;
+  object-fit: cover;
+}
+.icon
+{
+  margin: 25px;
+}
+
+/*-----|PIED DE PAGE|-----*/
+footer
+{
+  margin-bottom: 0;
+  width: 100%;
+  height: 175px;
+  background: linear-gradient(white, green);
+}
+/*production*/
+span
+{
+  font-family: 'Black Ops One', sans-serif;
+  font-size: 1.5vw;
+  font-weight: 100;
+  color: white;
+}
+/*Find me*/
+#findMe
+{
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+}
+#find
+{
+  font-size: 1vw;
+}
+#find, #linkFb, #linkLnkd
+{
+  margin: 5px;
+}
+#fb, #lkn
+{
+  width: 1.2vw;
+  height: 1.2vw;
+}
+#concept
+{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

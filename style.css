@@ -9,23 +9,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  animation: 1s backGrd 1 ease-out both;
-  animation-delay: 17.5s;
-  animation-iteration-count: 1;
+  background-color: black;
   overflow: hidden;
-}
-@keyframes backGrd 
-{
-  0%{
-    background-color: black;
-  }
-  99.9%{
-    background-color: white;
-  }
-  100%{
-    transform: scale(0,0);
-    display: none;
-  }
 }
 /*-----| INTRO ANIMATION |-----*/
 #title
@@ -400,99 +385,184 @@
     display: none;
   }
 }
-/*-----| FIN LOADER |-----*/
-/*-----| PAGE PORTFOLIO|-----*/
-body{
-  margin: 0 auto;
-}
-header
+/*----- CAREER -----*/
+#animCareer
 {
-  margin: 0 auto;
-  padding-bottom: 10px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0,0);
+  opacity: 0;
+  animation: timeCareer 1s ease-in forwards;
+  animation-delay: 17s;
+}
+@keyframes timeCareer{
+  0%{
+    transform: scale(0,0);
+  opacity: 0;
+  }
+  100%{
+    transform: scale(1,1);
+  opacity: 1;
+  }
+}
+#career, #nameCareer
+{
+  display: flex;
+}
+.words
+{
+  margin: 10px 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 9vw;
+  text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228dff,0 0 35px #228dff,0 0 40px #228dff;
+  font-family: 'Black Ops One', sans-serif;
+}
+/* .words span
+{
+  border: 1px solid green;
+  animation: letter 2s linear infinite 0.5s;
+} */
+.words span:nth-child(2)
+{
+  animation: letter 1.5s linear infinite 1s;
+}
+/* .words span:nth-child(3)
+{
+  animation: letter 2s linear infinite 1.5s;
+}
+.words span:nth-child(4)
+{
+  animation: letter 2s linear infinite 2s;
+}
+.words span:nth-child(5)
+{
+  animation: letter 2s linear infinite 2.5s;
+} */
+/* .words span:nth-child(6)
+{
+  animation: letter 2s linear infinite 3s;
+} */
+.words span:nth-child(5)
+{
+  animation: letter 1.5s linear infinite 1.5s;
+}
+/* .words span:nth-child(8)
+{
+  animation: letter 2s linear infinite 4s;
+} */
+/* .words span:nth-child(9)
+{
+  animation: letter 2s linear infinite 4.5s;
+} */
+/* .words span:nth-child(10)
+{
+  animation: letter 2s linear infinite 2.5s;
+} */
+/* .words span:nth-child(11)
+{
+  animation: letter 3s linear infinite 5.5s;
+} */
+@keyframes letter {
+  0%{
+    opacity: 0.45;
+  }
+  10%{
+    opacity: 1;
+  }
+  20%{
+    opacity: 0.63;
+  }
+  30%{
+    opacity: 0.95;
+  }
+  40%{
+    opacity: 0.79;
+  }
+  50%{
+    opacity: 0.97;
+  }
+  60%{
+    opacity: 0;
+  }
+  70%{
+    opacity: 0.63;
+  }
+  80%{
+    opacity: 0.95;
+  }
+  90%{
+    opacity: 0.79;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+#link
+{
+  width: 65%;
+  height: 10%;
+  margin-top: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background: linear-gradient(green, #fff);
-}
-#arbod
-{
-  color: white;
-  font-size: 3.9vw;
-  font-family: 'New Tegomin', serif;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  transform: scale(0,0);
+  opacity: 0;
+  animation: linked 1s ease-in-out 1 forwards;
+  animation-delay: 19s;
 }
-#jerome
+@keyframes linked 
 {
-  color: white;
-  font-size: 3.9vw;
-  font-family: 'New Tegomin', serif;
-  display: flex;
-  justify-content: center;
-  align-content: space-around;
-  align-items: center;
+  0%{
+    transform: scale(0,0);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1,1);
+    opacity: 1;
+  }
+
+  
 }
-.hdrp
+.button
 {
-  margin: 0 0;
+  width: 100%;
+  margin: 15px;
 }
-#career
+a
+{
+  font-size: 3vw;
+  border: 3px double aqua;
+  border-radius: 15px;
+  margin: 15px;
+  text-decoration: none;
+  background: black;
+  transition: 0.5s;
+  
+}
+a:link
+{
+  color: aqua;
+}
+a:visited
+{
+  color: aqua;
+}
+a:hover
 {
   background-color: white;
-  color: #a7bfa7;
-  text-shadow: 2px 2px 2px green;
-  border: 5px double black;
-  padding: 5px;
-  border-radius: 30px;
-  font-size: 3.7vw;
-  font-family: 'Black Ops One', sans-serif;
+  color: black;
+  /* background: linear-gradient(to bottom, #6161ff 1%, #e4e4fd 50%, #6161ff); */
 }
-#laser1 
-{
-  position: absolute;
-  left: 20.5vw;
-  top: 0.5vw;
-  border-radius: 3px;
-  background: linear-gradient(to bottom, red 1%,#ffd6d6 40%,red );
-  box-shadow: 0px 0px 9px red;
-  height: 0.4vw;
-  animation: laserRed1 3s ease-in-out infinite alternate;
-  animation-delay: 17.6s;
-}
-@keyframes laserRed1 
-{
-  0%{
-    width: 0vw;
-  }
-  10%{
-    width: 0vw;
-  }
-  100%{
-    width: 43vw;
-  }
-}
-#laser2 
-{
-  position: absolute;
-  right: 24vw;
-  top: 4.6vw;
-  border-radius: 3px;
-  background: linear-gradient(to bottom, #6161ff 1%, #e4e4fd 30%, #6161ff);
-  box-shadow: 0px 0px 9px #0000d1;
-  height: 0.3vw;
-  animation: laserRed2 3s ease-in-out infinite alternate;
-  animation-delay: 17.6s;
-}
-@keyframes laserRed2 
-{
-  0%{
-    width: 0vw;
-  }
-  10%{
-    width: 0vw;
-  }
-  100%{
-    width: 43vw;
-  }
-}
+
