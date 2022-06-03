@@ -417,6 +417,7 @@
 #career, #nameCareer
 {
   display: flex;
+  margin-top: -50px;
 }
 .words
 {
@@ -512,7 +513,6 @@
 {
   width: 65%;
   height: 10%;
-  margin-top: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -538,12 +538,12 @@
 .button
 {
   width: 100%;
-  margin: 15px;
+  margin: 5px;
 }
 a
 {
-  font-size: 3vw;
-  border: 3px double aqua;
+  font-size: 1vw;
+  border: 3px solid aqua;
   border-radius: 15px;
   margin: 15px;
   text-decoration: none;
@@ -561,7 +561,9 @@ a:visited
 }
 a:hover
 {
-  background-color: white;
+  background-color: aquamarine;
+  border: 3px solid white;
+  box-shadow: 3px 3px 1px white, 6px 6px 6px aqua, 6px 6px 12px aqua, 6px 6px 24px #00dfdf;
   color: black;
   /* background: linear-gradient(to bottom, #6161ff 1%, #e4e4fd 50%, #6161ff); */
 }

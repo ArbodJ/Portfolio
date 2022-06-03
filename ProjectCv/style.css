@@ -1,0 +1,199 @@
+/*GÉNERALITÉ*/
+body
+{
+  margin: 0 auto;
+  background-color: #d9efff;
+}
+#page
+{
+  z-index: 1;
+  border: 2px solid var(--main-color);
+  border-radius: 30px;
+  margin: auto 7%;
+}
+:root
+{
+  --main-color: #49b1fb;
+}
+:root
+{
+  --main-color1: #bde4ff;
+}
+
+/*ENTÊTE DE PAGE*/
+header
+{
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--main-color);
+  border-radius: 30px;
+}
+h1
+{
+  margin: 5px 0 0 0;
+  font-size: 4vw;
+  color: var(--main-color1);
+  text-shadow: 3px 3px 2px var(--main-color);
+  text-align: center;
+}
+#history
+{
+  margin: 5px 0 10px 0;
+  font-size: 1.3vw;
+  text-align: center;
+}
+/*CORPS DE PAGE*/
+section
+{
+  display: flex;
+  flex-direction: row;
+}
+/*Partie état civil et compétences*/
+#me
+{
+  background-color: var(--main-color);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1 20%;
+}
+#me h2
+{
+  color: var(--main-color1);
+  text-shadow: 2px 2px 1px black;
+  font-size: 2.5vw;
+}
+#aboutMe p
+{
+  line-height: 0.5em;
+  margin-left: 25px;
+}
+#skills li
+{
+  line-height: 1.3em;
+}
+#xp
+{
+  border: 1px solid var(--main-color);
+  border-radius: 30px;
+  flex: 1 80%;
+}
+/*Partie experience pro et formation*/
+#xp h2
+{
+  
+  margin: 25px 0 25px 0;
+  text-align: center;
+  font-size: 2.5vw;
+  color: var(--main-color1);
+  text-shadow: 3px 3px 2px var(--main-color);
+}
+#xp li
+{
+  font-size: 1vw;
+  line-height: 1.3em;
+}
+/*PIED DE PAGE*/
+#project
+{
+  border: 1px solid var(--main-color);
+  border-radius: 30px;
+}
+#project h2
+{
+  margin: 10px 0 0 0;
+  text-align: center;
+  font-size: 2.5vw;
+  color: var(--main-color1);
+  text-shadow: 3px 3px 2px var(--main-color);
+}
+#project p
+{
+  margin-left: 25px;
+}
+/*RESPONSIVE*/
+@media screen and (max-width: 1290px)
+{
+  #aboutMe p
+  {
+    line-height: 0.9em;
+  }
+  #xp li
+  {
+    font-size: 1.4vw;
+  }
+  #xp h2
+  {
+    font-size: 2.9vw;
+  }
+}
+@media screen and (max-width: 1100px)
+{
+  #aboutMe p
+  {
+    font-size: 1.1vw;
+    line-height: 1em;
+    margin-left: 10px;
+  }
+  #skills li
+  {
+    font-size: 1.1vw;
+  }
+}
+@media screen and (max-width: 780px)
+{
+  #page
+  {
+    border-radius: 15px;
+  }
+  header
+  {
+    border-radius: 15px;
+  }
+  #me
+  {
+    border-radius: 15px;
+  }
+  #xp
+  {
+    border-radius: 15px;
+  }
+  #project
+  {
+    border-radius: 15px;
+  }
+  #skills ul
+  {
+    margin: 10px 0px 10px 20px;
+    padding-left: 0;
+  }
+  #aboutMe p
+  {
+    font-size: 1.3vw;
+  }
+  #skills li
+  {
+    font-size: 1.3vw;
+  }
+  #xp li
+  {
+    font-size: 1.7vw;
+  }
+  h1
+{
+  color: var(--main-color1);
+  text-shadow: 2px 2px 1px var(--main-color);
+}
+  #xp h2
+  {
+    color: var(--main-color1);
+    text-shadow: 2px 2px 1px var(--main-color);
+  }
+  #project h2
+{
+  color: var(--main-color1);
+  text-shadow: 2px 2px 1px var(--main-color);
+}
+}
+

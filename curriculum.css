@@ -1,0 +1,34 @@
+body
+{
+  margin: 0 auto;
+}
+header
+{
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(green, #fff);
+}
+#arbod
+{
+  color: white;
+  font-size: 3.9vw;
+  font-family: 'New Tegomin', serif;
+}
+#jerome
+{
+  color: white;
+  font-size: 3.9vw;
+  font-family: 'New Tegomin', serif;
+}
+#career
+{
+  background: white;
+  color: #7dcf7d;
+  text-shadow: 3px 3px 2px green;
+  border: 5px double black;
+  padding: 5px;
+  border-radius: 30px;
+  font-size: 3.9vw;
+  font-family: 'Black Ops One', sans-serif;
+}
