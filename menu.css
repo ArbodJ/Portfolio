@@ -1,4 +1,6 @@
-/*-----| PAGE PORTFOLIO|-----*/
+/*----------------------------*/
+/*-----| PAGE PORTFOLIO |-----*/
+/*----------------------------*/
 body{
   margin: 0 auto;
   position: absolute;
@@ -11,13 +13,16 @@ body{
 {
   height: 100%;
 }
-/*-----| ENTETE DE PAGE|-----*/
+/*----------------------------*/
+/*-----| ENTETE DE PAGE |-----*/
+/*----------------------------*/
 header
 {
   height: 15%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   background: linear-gradient(green, #fff);
 }
 #arbod
@@ -46,23 +51,21 @@ header
 #career
 {
   background-color: white;
-  color: #a7bfa7;
-  text-shadow: 2px 2px 2px green;
+  
   border: 5px double black;
-  padding: 5px;
+  padding: 0 5px;
   border-radius: 30px;
-  font-size: 3.7vw;
   font-family: 'Black Ops One', sans-serif;
 }
-
-/*RESPONSIVE Entete de page*/
-@media screen and (max-width: 800px)
+#career p
 {
-  header {
-    flex-direction: column;
-  }
+  font-size: 3.7vw;
+  color: #7dcf7d;
+  text-shadow: 2px 2px 2px green;
 }
+/*---------------------------*/
 /*-----| CORPS DE PAGE |-----*/
+/*---------------------------*/
 /*GENERALITÉ*/
 #middle{
   width: 100%;
@@ -79,7 +82,7 @@ header
   flex-direction: row;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, white 1%, #6e6ef1 50%, white);
+  background: linear-gradient(to bottom, white 1%, aquamarine 50%, white);
 }
 h1 p 
 {
@@ -97,6 +100,38 @@ h1 p
   font-size: 1.7vw;
   text-align: justify;
 }
+#replay
+{
+  display: flex;
+  justify-content: center;
+}
+#intro
+{
+  display: flex;
+  align-items: center;
+  font-size: 1.3vw;
+  text-decoration: none;
+  margin-top: 15%;
+  padding: 0px 5px 0px 0;
+  border: 1px solid red;
+  border-radius: 22px;
+}
+#rpl
+{
+  border: 1px solid red;
+  border-radius: 22px;
+  padding: 5px 10px;
+  transition-duration: 1s;
+  
+}
+#rpl:hover, #intro
+{
+  transform: rotate(-720deg);
+}
+/* #intro #rpl
+{
+  padding: 5px 10px;
+} */
 /*2ÈME PATIE : ICON - LIENS*/
 #part2
 {
@@ -118,7 +153,6 @@ h1 p
 }
 .linkTxt
 {
-  border: 1px solid aquamarine;
   width: 30%;
   display: flex;
   justify-content: center;
@@ -126,7 +160,7 @@ h1 p
 }
 .linkTxt a
 {
-  border: 3px double aquamarine;
+  border: 3px double white;
   padding: 5px 15px;
   border-radius: 0 25px 0 10px;
   font-size: 2.7vw;
@@ -137,6 +171,7 @@ h1 p
 }
 .linkTxt a:hover
 {
+  text-shadow: 2px 2px 2px blue;
   background-color: aquamarine;
   border: 3px solid white;
   box-shadow: 3px 3px 1px white, 6px 6px 6px aqua, 6px 6px 12px aqua, 6px 6px 24px #00dfdf;
@@ -179,10 +214,31 @@ footer
   align-items: center;
   justify-content: center;
 }
-span
+#prod
 {
   font-family: 'Black Ops One', sans-serif;
   font-size: 1.5vw;
   font-weight: 100;
   color: white;
+}
+/*------------------------*/
+/*-----| RESPONSIVE |-----*/
+/*------------------------*/
+@media screen and (max-width: 1000px)
+{
+  #part1
+  {
+    flex-direction: column;
+  }
+  #icon
+  {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 750px)
+{
+  header
+  {
+    flex-direction: column;
+  }
 }
