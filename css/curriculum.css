@@ -82,7 +82,7 @@ header
 }
 #linkCv/*block haut*/
 {
-  background-image: url('images/screenCv.png');
+  background-image: url('../images/screenCv.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

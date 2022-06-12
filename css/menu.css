@@ -142,7 +142,7 @@ h1 p
   display: flex;
   width: 350vw;
   height: 100%;
-  background-image: url("images/circuit.jpg");
+  background-image: url("../images/circuit.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
