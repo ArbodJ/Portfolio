@@ -428,51 +428,14 @@
   text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228dff,0 0 35px #228dff,0 0 40px #228dff;
   font-family: 'Black Ops One', sans-serif;
 }
-/* .words span
-{
-  border: 1px solid green;
-  animation: letter 2s linear infinite 0.5s;
-} */
 .words span:nth-child(2)
 {
   animation: letter 1.3s linear infinite 1s;
 }
-/* .words span:nth-child(3)
-{
-  animation: letter 2s linear infinite 1.5s;
-}
-.words span:nth-child(4)
-{
-  animation: letter 2s linear infinite 2s;
-}
-.words span:nth-child(5)
-{
-  animation: letter 2s linear infinite 2.5s;
-} */
-/* .words span:nth-child(6)
-{
-  animation: letter 2s linear infinite 3s;
-} */
 .words span:nth-child(5)
 {
   animation: letter 1.3s linear infinite 1.5s;
 }
-/* .words span:nth-child(8)
-{
-  animation: letter 2s linear infinite 4s;
-} */
-/* .words span:nth-child(9)
-{
-  animation: letter 2s linear infinite 4.5s;
-} */
-/* .words span:nth-child(10)
-{
-  animation: letter 2s linear infinite 2.5s;
-} */
-/* .words span:nth-child(11)
-{
-  animation: letter 3s linear infinite 5.5s;
-} */
 @keyframes letter {
   0%{
     opacity: 0.45;
@@ -507,7 +470,6 @@
   100%{
     opacity: 1;
   }
-  
 }
 #link
 {
@@ -532,8 +494,6 @@
     transform: scale(1,1);
     opacity: 1;
   }
-
-  
 }
 .button
 {
@@ -549,7 +509,6 @@ a
   text-decoration: none;
   background: black;
   transition: 0.5s;
-  
 }
 a:link
 {
@@ -565,7 +524,6 @@ a:hover
   border: 3px solid white;
   box-shadow: 3px 3px 1px white, 6px 6px 6px aqua, 6px 6px 12px aqua, 6px 6px 24px #00dfdf;
   color: black;
-  /* background: linear-gradient(to bottom, #6161ff 1%, #e4e4fd 50%, #6161ff); */
 }
 /*--------------------*/
 /*-----RESPONSIVE-----*/
@@ -575,5 +533,19 @@ a:hover
   #career, #nameCareer
   {
     margin-top: -30px;
+  }
+}
+@media screen and (max-width: 850px)
+{
+  a
+  {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 500px)
+{
+  a
+  {
+    font-size: 2.5vw;
   }
 }
