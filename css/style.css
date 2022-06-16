@@ -567,4 +567,13 @@ a:hover
   color: black;
   /* background: linear-gradient(to bottom, #6161ff 1%, #e4e4fd 50%, #6161ff); */
 }
-
+/*--------------------*/
+/*-----RESPONSIVE-----*/
+/*--------------------*/
+@media screen and (max-width: 1000px)
+{
+  #career, #nameCareer
+  {
+    margin-top: -30px;
+  }
+}
