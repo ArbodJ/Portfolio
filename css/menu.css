@@ -237,7 +237,7 @@ footer
 /*------------------------*/
 /*-----| RESPONSIVE |-----*/
 /*------------------------*/
-/* @media screen and (max-width: 1000px)
+@media screen and (max-width: 1000px)
 {
   #part1
   {
@@ -248,7 +248,7 @@ footer
     flex-direction: column;
   }
 }
-@media screen and (max-width: 750px)
+/* @media screen and (max-width: 750px)
 {
   header
   {
