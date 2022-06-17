@@ -262,34 +262,42 @@ footer
 {
   /*1ERE PARTIE : TEXTE DESCRIPTION*/
   #part1 h1{
-    font-size: 4vw;
+    font-size: 3.5vw;
+    margin: 5px 0;
   }
   #part1 p{
-    font-size: 2.7vw;
+    margin: 0 5px;
+    font-size: 2.3vw;
   }
   .fa-solid.fa-rotate{
-    font-size: 3.1vw;
+    font-size: 2.1vw;
+  }
+  #history{
+    flex: 1 25%;
+  }
+  #replay{
+    margin-top: 1vw;
   }
   #replay p{
     font-size: 1.5vw;
   }
   /*2ÈME PATIE : ICON - LIENS*/
   .linkTxt a{
-    font-size: 5vw;
+    font-size: 3vw;
   }
   /*Pied de page*/
   #find{
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   #findMe img{
-    width: 4vw;
-    height: 4vw;
+    width: 3vw;
+    height: 3vw;
   }
   #concept{
     font-size: 3vw;
   }
   #prod{
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   #concept span {
     margin-bottom: 8px;
