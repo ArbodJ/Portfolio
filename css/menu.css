@@ -89,12 +89,16 @@ h1 p
   display: flex;
   flex-direction: column;
 }
-#part1 h1
+#history
+{
+  flex: 1 40%;
+}
+#history h1
 {
   font-size: 2vw;
   text-align: center;
 }
-#part1 p
+#history p
 {
   margin:  0 40px 0 40px;
   font-size: 1.7vw;
@@ -140,7 +144,7 @@ h1 p
 #part2
 {
   display: flex;
-  width: 350vw;
+  width: 100%;
   height: 100%;
   background-image: url("../images/circuit.jpg");
   background-repeat: no-repeat;
@@ -182,9 +186,14 @@ h1 p
   border-radius: 35px;
   box-shadow: 3px 3px 1px white, 6px 6px 6px aqua, 6px 6px 12px aqua, 6px 6px 24px #00dfdf;
 }
+/*------------------------*/
 /*-----|PIED DE PAGE|-----*/
+/*------------------------*/
 footer
 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 0;
   width: 100%;
   height: 15%;
@@ -246,12 +255,44 @@ footer
   #icon
   {
     flex-direction: column;
+    align-items: center;
   }
 }
-/* @media screen and (max-width: 750px)
+@media screen and (max-width: 600px)
 {
-  header
-  {
-    flex-direction: column;
+  /*1ERE PARTIE : TEXTE DESCRIPTION*/
+  #part1 h1{
+    font-size: 4vw;
   }
-} */
+  #part1 p{
+    font-size: 2.7vw;
+  }
+  .fa-solid.fa-rotate{
+    font-size: 3.1vw;
+  }
+  #replay p{
+    font-size: 1.5vw;
+  }
+  /*2ÈME PATIE : ICON - LIENS*/
+  .linkTxt a{
+    font-size: 5vw;
+  }
+  /*Pied de page*/
+  #find{
+    font-size: 3vw;
+  }
+  #findMe img{
+    width: 4vw;
+    height: 4vw;
+  }
+  #concept{
+    font-size: 3vw;
+  }
+  #prod{
+    font-size: 3vw;
+  }
+  #concept span {
+    margin-bottom: 8px;
+    font-size: 1.8vw;
+  }
+}
