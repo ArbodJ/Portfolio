@@ -3,6 +3,7 @@
 /*----------------------------*/
 body{
   margin: 0 auto;
+  display: flex;
   position: absolute;
   top: 0;
   right: 0;
@@ -11,18 +12,20 @@ body{
 }
 #page
 {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 /*----------------------------*/
 /*-----| ENTETE DE PAGE |-----*/
 /*----------------------------*/
 header
 {
-  height: 15%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  height: 15%;
   background: linear-gradient(green, #fff);
 }
 #arbod
@@ -68,20 +71,15 @@ header
 /*---------------------------*/
 /*GENERALITÉ*/
 #middle{
-  width: 100%;
-  height: 70%;
-  
   display: flex;
   flex-direction: row;
-  
+  height: 70%;
 }
 /*1ERE PARTIE : TEXTE DESCRIPTION*/
 #part1
 {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 100%;
   background: linear-gradient(to bottom, white 1%, aquamarine 50%, white);
 }
 h1 p 
@@ -91,17 +89,21 @@ h1 p
 }
 #history
 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   flex: 1 40%;
+  margin: 0px 0.5vw;
 }
 #history h1
 {
-  font-size: 2vw;
+  font-size: 40px;
   text-align: center;
 }
 #history p
 {
-  margin:  0 40px 0 40px;
-  font-size: 1.7vw;
+  margin: 0 0.3vw;
+  font-size: 24px;
   text-align: justify;
 }
 #replay
@@ -109,7 +111,6 @@ h1 p
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 6vw;
 }
 #intro
 {
@@ -121,7 +122,7 @@ h1 p
 }
 .fa-solid.fa-rotate
 {
-  padding: 1.1vw 1.1vw;
+  padding: 0.85vw 0.85vw;
   text-decoration: none;
   color: black;
   font-size: 1.1vw;
@@ -167,22 +168,21 @@ h1 p
 }
 .linkTxt a
 {
-  border: 3px double white;
+  border: 5px ridge aquamarine;
   padding: 5px 15px;
-  border-radius: 0 25px 0 10px;
-  font-size: 2.7vw;
-  font-weight: bold;
+  font-family: 'Black Ops One', sans-serif;
+  font-size: 45px;
   text-decoration: none;
-  color: white;
-  text-shadow: 2px 2px 3px yellow;
-  transition: 0.7s;
+  color: aquamarine;
+  text-shadow: 1px 1px 1px white;
+  transition: 0.7s ease-in-out;
 }
 .linkTxt a:hover 
 {
   color: aqua;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 2px 2px 2px white;
   background-color: aquamarine;
-  border: 3px solid white;
+  border: 5px solid white;
   border-radius: 35px;
   box-shadow: 3px 3px 1px white, 6px 6px 6px aqua, 6px 6px 12px aqua, 6px 6px 24px #00dfdf;
 }
@@ -193,9 +193,6 @@ footer
 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-bottom: 0;
-  width: 100%;
   height: 15%;
   background: linear-gradient(white, green);
 }
@@ -208,7 +205,7 @@ footer
 }
 #find
 {
-  font-size: 1.5vw;
+  font-size: 1.1vw;
 }
 #find, #linkFb, #linkLnkd, #linkGit
 {
@@ -218,8 +215,8 @@ footer
 }
 #fb, #lkn, #mail
 {
-  width: 2.2vw;
-  height: 2.2vw;
+  width: 1.5vw;
+  height: 1.5vw;
 }
 /*production*/
 #concept
@@ -246,6 +243,17 @@ footer
 /*------------------------*/
 /*-----| RESPONSIVE |-----*/
 /*------------------------*/
+@media screen and (max-width: 1350px)
+{
+  .linkTxt a 
+  {
+    font-size: 30px;
+  }
+  #history h1 
+  {
+    font-size: 30px;
+  }
+}
 @media screen and (max-width: 1000px)
 {
   #part1
@@ -256,6 +264,10 @@ footer
   {
     flex-direction: column;
     align-items: center;
+  }
+  #history p
+  {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 600px)
