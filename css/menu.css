@@ -91,16 +91,17 @@ h1 p
 {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex: 1 40%;
   margin: 0px 0.5vw;
 }
 #history h1
 {
+  margin: 0;
   font-size: 40px;
   text-align: center;
 }
-#history p
+#aboutMe
 {
   margin: 0 0.3vw;
   font-size: 24px;
@@ -112,6 +113,12 @@ h1 p
   flex-direction: column;
   align-items: center;
 }
+#rpl
+{
+  margin: 0 0.3vw;
+  font-size: 15px;
+  text-align: justify;
+}
 #intro
 {
   position: relative;
@@ -122,10 +129,10 @@ h1 p
 }
 .fa-solid.fa-rotate
 {
-  padding: 0.85vw 0.85vw;
+  padding: 11px 11px;
   text-decoration: none;
   color: black;
-  font-size: 1.1vw;
+  font-size: 39px;
   transition: 0.7s ease-in-out;
 }
 #intro:hover
@@ -136,10 +143,6 @@ h1 p
 {
   color: white;
   transform: rotate(-360deg);
-}
-#replay p
-{
-  font-size: 0.7vw;
 }
 /*2ÈME PATIE : ICON - LIENS*/
 #part2
@@ -191,21 +194,28 @@ h1 p
 /*------------------------*/
 footer
 {
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 15%;
   background: linear-gradient(white, green);
+}
+#foot
+{
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: column;
 }
 /*Find me*/
 #findMe
 {
   display: flex;
-  justify-content: center;
-  padding-top: 2%;
+  margin: 0 auto;
 }
 #find
 {
-  font-size: 1.1vw;
+  font-size: 28px;
 }
 #find, #linkFb, #linkLnkd, #linkGit
 {
@@ -213,30 +223,28 @@ footer
   align-items: center;
   margin:0 10px;
 }
-#fb, #lkn, #mail
+#fb, #lkn, #gthb
 {
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 25px;
+  height: 25px;
 }
 /*production*/
 #concept
 {
-  margin-top: 10px;
-  font-size: 1.1vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
+  font-size: 23px;
+  
 }
 #concept span 
 {
-  margin-bottom: 10px;
-  font-size: 0.8vw;
+  margin-left: -9px;
+  font-size: 15px;
 }
 #prod
 {
   margin-left: 5px;
   font-family: 'Black Ops One', sans-serif;
-  font-size: 1.8vw;
+  font-size: 35px;
   font-weight: 100;
   color: white;
 }
@@ -245,74 +253,214 @@ footer
 /*------------------------*/
 @media screen and (max-width: 1350px)
 {
-  .linkTxt a 
+  /*-----Entete page-----*/
+  #arbod, #jerome
   {
-    font-size: 30px;
+    font-size: 4.5vw;
   }
+  /*-----Corps de page*/
+  /*1er Partie*/
   #history h1 
   {
     font-size: 30px;
   }
-}
-@media screen and (max-width: 1000px)
-{
-  #part1
+  #aboutMe
   {
-    flex-direction: column;
+    font-size: 21px;
   }
+  #rpl
+  {
+    font-size: 13px;
+  }
+  /*2eme Partie*/
   #icon
   {
     flex-direction: column;
     align-items: center;
   }
-  #history p
+  /*Pied de page*/
+  #find
   {
-    font-size: 18px;
+    font-size: 21px;
+  }
+  #fb, #lkn, #gthb
+  {
+    width: 19px;
+    height: 19px;
   }
 }
-@media screen and (max-width: 600px)
+@media screen and (max-width: 1000px)
 {
-  /*1ERE PARTIE : TEXTE DESCRIPTION*/
-  #part1 h1{
-    font-size: 3.5vw;
-    margin: 5px 0;
+  /*Entete de page*/
+  header
+  {
+    height: 10%;
   }
-  #part1 p{
-    margin: 0 5px;
-    font-size: 2.3vw;
+  /*-----Corps de page*/
+  /*1er Partie*/
+  #history h1 
+  {
+    font-size: 17px;
   }
-  .fa-solid.fa-rotate{
-    font-size: 2.1vw;
+  #aboutMe
+  {
+    font-size: 15px;
   }
-  #history{
-    flex: 1 25%;
+  .fa-solid.fa-rotate
+  {
+    padding: 9px 9px;
+    font-size: 21px;
   }
-  #replay{
-    margin-top: 1vw;
-  }
-  #replay p{
-    font-size: 1.5vw;
-  }
-  /*2ÈME PATIE : ICON - LIENS*/
-  .linkTxt a{
-    font-size: 3vw;
+  /*2eme partie*/
+  .linkTxt a
+  {
+    font-size: 35px;
   }
   /*Pied de page*/
-  #find{
-    font-size: 2.5vw;
+  footer 
+  {
+    height: 9%;
   }
-  #findMe img{
-    width: 3vw;
-    height: 3vw;
+  #find {
+    font-size: 15px;
+}
+  #concept
+  {
+    font-size: 15px;
   }
-  #concept{
-    font-size: 3vw;
+  #concept span 
+{
+  margin-left: -5px;
+  font-size: 13px;
+}
+  #prod
+  {
+    font-size: 20px;
   }
-  #prod{
-    font-size: 2.5vw;
+}
+@media screen and (max-width: 575px)
+{
+  /*Entete de page*/
+  header
+  {
+    height: 13%;
   }
-  #concept span {
-    margin-bottom: 8px;
-    font-size: 1.8vw;
+  /*-----Corps de page*/
+  /*1er Partie*/
+  #middle
+  {
+    height: 100%;
+  }
+  #part1
+  {
+    flex-direction: column;
+  }
+  #history
+  {
+    flex: 1 55%;
+  }
+  #history h1 {
+    font-size: 14px;
+  }
+  #aboutMe
+  {
+    font-size: 12px;
+  }
+  .fa-solid.fa-rotate
+  {
+    padding: 3px 3px;
+    font-size: 11px;
+  }
+  #rpl
+  {
+    font-size: 10px;
+  }
+  /*2eme partie*/
+  .linkTxt a
+  {
+    border: 2px ridge aquamarine;
+    padding: 1px 10px;
+    font-size: 17px;
+  }
+  /*Pied de page*/
+  footer 
+  {
+    height: 16%;
+  }
+  #find 
+  {
+    font-size: 12px;
+  }
+  #fb, #lkn, #gthb {
+    width: 15px;
+    height: 15px;
+}
+  #concept
+  {
+    font-size: 11px;
+  }
+  #concept span
+  {
+    font-size: 13px;
+  }
+  #prod
+  {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 340px)
+{
+  /*-----Corps de page*/
+  /*1er Partie*/
+  
+  #history h1 
+  {
+    font-size: 13px;
+  }
+  #aboutMe
+  {
+    font-size: 10px;
+  }
+  .fa-solid.fa-rotate
+  {
+    padding: 3px 3px;
+    font-size: 11px;
+  }
+  #rpl
+  {
+    font-size: 9px;
+  }
+  .linkTxt a 
+  {
+    font-size: 9px;
+  }
+  #rpl
+  {
+    font-size: 9px;
+  }
+  /*Pied de page*/
+  footer 
+  {
+    height: 13%;
+  }
+  #find {
+    font-size: 11px;
+  }
+  #fb, #lkn, #gthb
+  {
+    width: 15px;
+    height: 15px;
+  }
+  #concept
+  {
+    font-size: 10px;
+  }
+  #concept span
+  {
+    font-size: 9px;
+  }
+  #prod
+  {
+    font-size: 13px;
   }
 }
