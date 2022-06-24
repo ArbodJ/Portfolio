@@ -194,7 +194,6 @@ h1 p
 /*------------------------*/
 footer
 {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -203,7 +202,6 @@ footer
 }
 #foot
 {
-  border: 1px solid yellow;
   display: flex;
   flex-direction: column;
 }
@@ -233,7 +231,6 @@ footer
 {
   margin: 0 auto;
   font-size: 23px;
-  
 }
 #concept span 
 {
