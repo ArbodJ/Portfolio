@@ -1,68 +1,52 @@
-/*----------------------------*/
-/*-----| PAGE PORTFOLIO |-----*/
-/*----------------------------*/
-body{
+body
+{
   margin: 0 auto;
-  display: flex;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 #page
 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 /*----------------------------*/
 /*-----| ENTETE DE PAGE |-----*/
 /*----------------------------*/
 header
 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 15%;
+  height: 185;
   background: linear-gradient(green, #fff);
 }
-#arbod
+#head
 {
-  color: white;
-  font-size: 3.9vw;
-  font-family: 'New Tegomin', serif;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  margin: 1vw 0 2vw 0;
 }
-#jerome
+.name
 {
   color: white;
-  font-size: 3.9vw;
+  font-size: 3.2vw;
   font-family: 'New Tegomin', serif;
+  font-weight: bold;
   display: flex;
   justify-content: center;
-  align-content: space-around;
   align-items: center;
 }
 .hdrp
 {
-  margin: 0 0;
+  margin: 1vw 0;
 }
 #career
 {
   background-color: white;
-  
   border: 5px double black;
-  padding: 0 5px;
+  padding: 0 0.4vw;
   border-radius: 30px;
   font-family: 'Black Ops One', sans-serif;
 }
 #career p
 {
-  font-size: 3.7vw;
+  font-size: 2.5vw;
   color: #7dcf7d;
   text-shadow: 2px 2px 2px green;
 }
@@ -70,22 +54,16 @@ header
 /*-----| CORPS DE PAGE |-----*/
 /*---------------------------*/
 /*GENERALITÉ*/
-#middle{
+#middle
+{
+  height: 646px;
   display: flex;
-  flex-direction: row;
-  height: 70%;
 }
 /*1ERE PARTIE : TEXTE DESCRIPTION*/
 #part1
 {
   display: flex;
-  flex-direction: row;
   background: linear-gradient(to bottom, white 1%, aquamarine 50%, white);
-}
-h1 p 
-{
-  display: flex;
-  flex-direction: column;
 }
 #history
 {
@@ -93,18 +71,24 @@ h1 p
   flex-direction: column;
   justify-content: space-around;
   flex: 1 40%;
-  margin: 0px 0.5vw;
+  margin: 0 10px;
 }
 #history h1
 {
-  margin: 0;
-  font-size: 40px;
+  margin-bottom: 1.5vw;
+  font-size: 2vw;
   text-align: center;
+}
+h1 p 
+{
+  display: flex;
+  flex-direction: column;
 }
 #aboutMe
 {
-  margin: 0 0.3vw;
-  font-size: 24px;
+  margin: 2.93vw 1.5vw;
+  font-size: 1.5vw;
+  line-height: 2vw;
   text-align: justify;
 }
 #replay
@@ -112,6 +96,7 @@ h1 p
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1.1vw 0;
 }
 #rpl
 {
@@ -149,7 +134,6 @@ h1 p
 {
   display: flex;
   width: 100%;
-  height: 100%;
   background-image: url("../images/circuit.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -158,26 +142,25 @@ h1 p
 #icon
 {
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: space-around;
 }
 .linkTxt
 {
-  width: 30%;
+  flex: 1 33%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .linkTxt a
 {
-  border: 5px ridge aquamarine;
-  padding: 5px 15px;
+  border: 7px ridge aquamarine;
+  padding: 13px 18px;
   font-family: 'Black Ops One', sans-serif;
-  font-size: 45px;
+  font-size: 2.5vw;
   text-decoration: none;
   color: aquamarine;
-  text-shadow: 1px 1px 1px white;
+  text-shadow: 2px 2px 1px white;
   transition: 0.7s ease-in-out;
 }
 .linkTxt a:hover 
@@ -192,272 +175,159 @@ h1 p
 /*------------------------*/
 /*-----|PIED DE PAGE|-----*/
 /*------------------------*/
+/* Généralité */
 footer
 {
+  height: 143px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 15%;
   background: linear-gradient(white, green);
 }
 #foot
 {
   display: flex;
   flex-direction: column;
+  margin-top: 1.9vw;
 }
-/*Find me*/
-#findMe
+#findMe/* Où suis je ? */
 {
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin: 13px 0;
 }
 #find
 {
-  font-size: 28px;
+  margin:0 10px;
+  font-size: 1.3vw;
 }
-#find, #linkFb, #linkLnkd, #linkGit
+#linkFb, #linkLnkd, #linkGit
 {
   display: flex;
   align-items: center;
-  margin:0 10px;
+  margin:0 15px;
 }
 #fb, #lkn, #gthb
 {
-  width: 25px;
-  height: 25px;
+  width: 33px;
+  height: 33px;
 }
-/*production*/
-#concept
+#concept/* production */
 {
   margin: 0 auto;
-  font-size: 23px;
+  font-size: 1.1vw;
 }
 #concept span 
 {
-  margin-left: -9px;
-  font-size: 15px;
+  margin-left: -7px;
+  font-size: 1vw;
 }
 #prod
 {
   margin-left: 5px;
   font-family: 'Black Ops One', sans-serif;
-  font-size: 35px;
-  font-weight: 100;
+  font-size: 2vw;
+  font-weight: normal;
   color: white;
 }
 /*------------------------*/
 /*-----| RESPONSIVE |-----*/
 /*------------------------*/
-@media screen and (max-width: 1350px)
+@media screen and (max-width: 1300px)
 {
-  /*-----Entete page-----*/
-  #arbod, #jerome
+  .fa-solid.fa-rotate
   {
-    font-size: 4.5vw;
-  }
-  /*-----Corps de page*/
-  /*1er Partie*/
-  #history h1 
-  {
+    padding: 8px 8px;
     font-size: 30px;
-  }
-  #aboutMe
-  {
-    font-size: 21px;
   }
   #rpl
   {
-    font-size: 13px;
+    font-size: 12px;
   }
-  /*2eme Partie*/
-  #icon
+  #concept span
   {
-    flex-direction: column;
-    align-items: center;
-  }
-  /*Pied de page*/
-  #find
-  {
-    font-size: 21px;
-  }
-  #fb, #lkn, #gthb
-  {
-    width: 19px;
-    height: 19px;
+    margin-left: -5px;
   }
 }
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 880px)
 {
-  /*Entete de page*/
-  header
-  {
-    height: 10%;
-  }
-  /*-----Corps de page*/
-  /*1er Partie*/
-  #history h1 
-  {
-    font-size: 17px;
-  }
-  #aboutMe
-  {
-    font-size: 15px;
-  }
-  .fa-solid.fa-rotate
-  {
-    padding: 9px 9px;
-    font-size: 21px;
-  }
-  /*2eme partie*/
-  .linkTxt a
-  {
-    font-size: 35px;
-  }
-  /*Pied de page*/
-  footer 
-  {
-    height: 9%;
-  }
-  #find {
-    font-size: 15px;
-}
-  #concept
-  {
-    font-size: 15px;
-  }
-  #concept span 
-{
-  margin-left: -5px;
-  font-size: 13px;
-}
-  #prod
-  {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 575px)
-{
-  /*Entete de page*/
-  header
-  {
-    height: 13%;
-  }
-  /*-----Corps de page*/
-  /*1er Partie*/
-  #middle
-  {
-    height: 100%;
-  }
   #part1
   {
     flex-direction: column;
   }
   #history
   {
-    flex: 1 55%;
+    justify-content: space-around;
   }
-  #history h1 {
-    font-size: 14px;
+  #history h1
+  {
+    font-size: 4vw;
+    margin-bottom: 1.5vw;
   }
   #aboutMe
   {
-    font-size: 12px;
+    font-size: 3vw;
+  }
+  #part2
+  {
+    flex: 0 77%;
+  }
+  #icon
+  {
+    flex-direction: column;
+  }
+  #aboutMe
+  {
+    line-height: 3vw;
+    margin: 1.53vw 1.5vw;
+  }
+  #replay
+  {
+    margin: 1.1vw 0;
   }
   .fa-solid.fa-rotate
   {
-    padding: 3px 3px;
-    font-size: 11px;
+    padding: 6px 6px;
+    font-size: 20px;
   }
   #rpl
   {
     font-size: 10px;
-  }
-  /*2eme partie*/
-  .linkTxt a
-  {
-    border: 2px ridge aquamarine;
-    padding: 1px 10px;
-    font-size: 17px;
-  }
-  /*Pied de page*/
-  footer 
-  {
-    height: 16%;
-  }
-  #find 
-  {
-    font-size: 12px;
-  }
-  #fb, #lkn, #gthb {
-    width: 15px;
-    height: 15px;
-}
-  #concept
-  {
-    font-size: 11px;
-  }
-  #concept span
-  {
-    font-size: 13px;
-  }
-  #prod
-  {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 340px)
-{
-  /*-----Corps de page*/
-  /*1er Partie*/
-  
-  #history h1 
-  {
-    font-size: 13px;
-  }
-  #aboutMe
-  {
-    font-size: 10px;
-  }
-  .fa-solid.fa-rotate
-  {
-    padding: 3px 3px;
-    font-size: 11px;
-  }
-  #rpl
-  {
-    font-size: 9px;
-  }
-  .linkTxt a 
-  {
-    font-size: 9px;
-  }
-  #rpl
-  {
-    font-size: 9px;
-  }
-  /*Pied de page*/
-  footer 
-  {
-    height: 13%;
-  }
-  #find {
-    font-size: 11px;
   }
   #fb, #lkn, #gthb
   {
-    width: 15px;
-    height: 15px;
+    width: 27px;
+    height: 27px;
   }
-  #concept
+  #concept span 
   {
+    margin-left: -3px;
+    font-size: 1vw;
+  }
+}
+@media screen and (max-width: 550px)
+{
+  .linkTxt a
+  {
+    padding: 4px 12px;
+  }
+  .fa-solid.fa-rotate
+  {
+    padding: 4px 4px;
     font-size: 10px;
   }
-  #concept span
+  #rpl
   {
-    font-size: 9px;
+    font-size: 7px;
   }
-  #prod
+  #fb, #lkn, #gthb 
   {
-    font-size: 13px;
+    width: 21px;
+    height: 21px;
+  }
+  #concept span 
+  {
+    margin-left: -1px;
   }
 }
