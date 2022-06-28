@@ -490,16 +490,30 @@ footer
   {
     flex-direction: column;
   }
+  .hdrp
+  {
+    font-size: 15px;
+  }
   /*Corps de page*/
+  #aboutMe
+  {
+    font-size: 3.5vw;
+    line-height: 3.52vw;
+  }
   #part2
   {
     height: 55vw;
   }
   /*Pied de page*/
+  footer
+  {
+    height: 70px;
+  }
   #foot
   {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   #findMe
   {
