@@ -1,6 +1,6 @@
 body
 {
-  margin: 0 auto;
+  margin: auto auto;
 }
 #page
 {
@@ -12,7 +12,6 @@ body
 /*----------------------------*/
 header
 {
-  height: 185;
   background: linear-gradient(green, #fff);
 }
 #head
@@ -20,33 +19,31 @@ header
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 1vw 0 2vw 0;
+  margin: 10px 0 40px 0;
 }
 .name
 {
-  color: white;
-  font-size: 3.2vw;
-  font-family: 'New Tegomin', serif;
-  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-family: 'New Tegomin', serif;
+  font-weight: bold;
 }
 .hdrp
 {
-  margin: 1vw 0;
+  margin: 0 0;
+  font-size: 60px;
 }
 #career
 {
   background-color: white;
-  border: 5px double black;
-  padding: 0 0.4vw;
+  padding: 0 9px;
   border-radius: 30px;
   font-family: 'Black Ops One', sans-serif;
 }
 #career p
 {
-  font-size: 2.5vw;
   color: #7dcf7d;
   text-shadow: 2px 2px 2px green;
 }
@@ -56,27 +53,27 @@ header
 /*GENERALITÉ*/
 #middle
 {
-  height: 646px;
   display: flex;
+  flex-direction: column;
+  margin: 3px 0 5px 0;
 }
 /*1ERE PARTIE : TEXTE DESCRIPTION*/
-#part1
+#history
 {
   display: flex;
   background: linear-gradient(to bottom, white 1%, aquamarine 50%, white);
 }
-#history
+#part1
 {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   flex: 1 40%;
-  margin: 0 10px;
+  border: 7px ridge aquamarine;
 }
-#history h1
+#part1 h1
 {
-  margin-bottom: 1.5vw;
-  font-size: 2vw;
+  margin: 5px 0;
+  font-size: 35px;
   text-align: center;
 }
 h1 p 
@@ -86,9 +83,9 @@ h1 p
 }
 #aboutMe
 {
-  margin: 2.93vw 1.5vw;
-  font-size: 1.5vw;
-  line-height: 2vw;
+  margin: 55px 28px 100px 28px;
+  font-size: 1.6vw;
+  line-height: 1.62vw;
   text-align: justify;
 }
 #replay
@@ -96,28 +93,28 @@ h1 p
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1.1vw 0;
+  justify-content: center;
+  margin: 40px 0;
 }
 #rpl
 {
-  margin: 0 0.3vw;
+  margin: 2px auto;
   font-size: 15px;
   text-align: justify;
 }
 #intro
 {
   position: relative;
-  border: 1px solid black;
   border-radius: 45px;
   background: green;
   transition: 0.7s ease-in-out;
 }
 .fa-solid.fa-rotate
 {
-  padding: 11px 11px;
+  padding: 11px;
   text-decoration: none;
   color: black;
-  font-size: 39px;
+  font-size: 45px;
   transition: 0.7s ease-in-out;
 }
 #intro:hover
@@ -127,7 +124,7 @@ h1 p
 .fa-solid.fa-rotate:hover
 {
   color: white;
-  transform: rotate(-360deg);
+  transform: rotate(360deg);
 }
 /*2ÈME PATIE : ICON - LIENS*/
 #part2
@@ -147,26 +144,26 @@ h1 p
 }
 .linkTxt
 {
-  flex: 1 33%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 30%;
 }
 .linkTxt a
 {
   border: 7px ridge aquamarine;
   padding: 13px 18px;
   font-family: 'Black Ops One', sans-serif;
-  font-size: 2.5vw;
+  font-size: 43px;
   text-decoration: none;
   color: aquamarine;
   text-shadow: 2px 2px 1px white;
-  transition: 0.7s ease-in-out;
+  transition: 0.5s;
 }
 .linkTxt a:hover 
 {
-  color: aqua;
-  text-shadow: 2px 2px 2px white;
+  color: white;
+  text-shadow: 2px 2px 2px #00e1e1;
   background-color: aquamarine;
   border: 5px solid white;
   border-radius: 35px;
@@ -178,9 +175,7 @@ h1 p
 /* Généralité */
 footer
 {
-  height: 143px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   background: linear-gradient(white, green);
 }
@@ -188,19 +183,18 @@ footer
 {
   display: flex;
   flex-direction: column;
-  margin-top: 1.9vw;
 }
 #findMe/* Où suis je ? */
 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 13px 0;
+  margin: 38px 0;
 }
 #find
 {
   margin:0 10px;
-  font-size: 1.3vw;
+  font-size: 28px;
 }
 #linkFb, #linkLnkd, #linkGit
 {
@@ -210,124 +204,315 @@ footer
 }
 #fb, #lkn, #gthb
 {
-  width: 33px;
-  height: 33px;
+  width: 41px;
+  height: 41px;
 }
 #concept/* production */
 {
   margin: 0 auto;
-  font-size: 1.1vw;
+  font-size: 27px;
 }
 #concept span 
 {
-  margin-left: -7px;
-  font-size: 1vw;
+  margin-left: -9px;
+  font-size: 13px;
 }
 #prod
 {
   margin-left: 5px;
   font-family: 'Black Ops One', sans-serif;
-  font-size: 2vw;
+  font-size: 37px;
   font-weight: normal;
   color: white;
 }
 /*------------------------*/
 /*-----| RESPONSIVE |-----*/
 /*------------------------*/
-@media screen and (max-width: 1300px)
+@media all and (max-width: 1370px)
 {
+  /*Entete de page*/
+  #head
+  {
+    margin: 10px 0 30px 0;
+  }
+  .hdrp
+  {
+    font-size: 45px;
+  }
+  /*Corps de page*/
+  .linkTxt a /*part2*/
+  {
+    font-size: 31px;
+  }
   .fa-solid.fa-rotate
   {
-    padding: 8px 8px;
-    font-size: 30px;
+    padding: 9px;
+    font-size: 40px;
+  }
+  #replay
+  {
+    margin: 45px 0;
+  }
+  /*footer*/
+  #foot
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  #findMe
+  {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  #find
+  {
+    font-size: 21px;
+  }
+  #concept
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 15px;
+  }
+  #prod
+  {
+    font-size: 21px;
+  }
+  #concept span 
+  {
+    margin-left: 1px;
+    font-size: 11px;
+  }
+}
+@media all and (max-width: 1050px)
+{
+  /*Entete de page*/
+  .hdrp
+  {
+    font-size: 22px;
+  }
+  /*Corps de page*/
+  #part1 h1
+  {
+    font-size: 27px;
+  }
+  .linkTxt a /*part2*/
+  {
+    border: 4px ridge aquamarine;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px white;
+  }
+  .fa-solid.fa-rotate
+  {
+    font-size: 29px;
   }
   #rpl
   {
     font-size: 12px;
   }
-  #concept span
+  /*Pied de page*/
+  #foot
   {
-    margin-left: -5px;
+    flex-direction: row;
   }
-}
-@media screen and (max-width: 880px)
-{
-  #part1
+  #find
   {
-    flex-direction: column;
-  }
-  #history
-  {
-    justify-content: space-around;
-  }
-  #history h1
-  {
-    font-size: 4vw;
-    margin-bottom: 1.5vw;
-  }
-  #aboutMe
-  {
-    font-size: 3vw;
-  }
-  #part2
-  {
-    flex: 0 77%;
-  }
-  #icon
-  {
-    flex-direction: column;
-  }
-  #aboutMe
-  {
-    line-height: 3vw;
-    margin: 1.53vw 1.5vw;
-  }
-  #replay
-  {
-    margin: 1.1vw 0;
-  }
-  .fa-solid.fa-rotate
-  {
-    padding: 6px 6px;
-    font-size: 20px;
-  }
-  #rpl
-  {
-    font-size: 10px;
+    font-size: 16px;
   }
   #fb, #lkn, #gthb
   {
-    width: 27px;
-    height: 27px;
-  }
-  #concept span 
-  {
-    margin-left: -3px;
-    font-size: 1vw;
+    width: 35px;
+    height: 35px;
   }
 }
-@media screen and (max-width: 550px)
+@media all and (max-width: 890px)
 {
+  /*Entete de page*/
+  #head
+  {
+    margin: 5px 0 15px 0;
+  }
+  /*Corps de page*/
+  #history
+  {
+    flex-direction: column;
+  }
+  #part1
+  {
+    border: 3px ridge aquamarine;
+  }
+  #part1 h1
+  {
+    font-size: 19px;
+  }
+  #aboutMe
+  {
+    margin: 5px 28px 20px 28px;
+  }
+  #part2
+  {
+    height: 26vw;
+  }
+  #icon
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
   .linkTxt a
   {
-    padding: 4px 12px;
+    padding: 3px 8px;
+  }
+  #replay
+  {
+    margin: 12px 0;
   }
   .fa-solid.fa-rotate
   {
-    padding: 4px 4px;
-    font-size: 10px;
+    padding: 8px;
+    font-size: 23px;
   }
   #rpl
   {
-    font-size: 7px;
+    font-size: 10px;
+  }
+  /*Pied de page*/
+  footer 
+  {
+    height: 50px;
+  }
+  #find
+  {
+    font-size: 13px;
+  }
+  #fb, #lkn, #gthb
+  {
+    width: 25px;
+    height: 25px;
+  }
+  #concept
+  {
+    font-size: 11px;
+  }
+  #prod
+  {
+    margin-left: 2px;
+    font-size: 15px;
+  }
+  #concept span
+  {
+    margin-left: 1px;
+    font-size: 9px;
+  }
+}
+@media all and (max-width: 525px)
+{
+  /*Entete de page*/
+  .hdrp
+  {
+    font-size: 13px;
+  }
+  #head
+  {
+    margin: 5px 0 10px 0;
+  }
+  #career p
+  {
+    text-shadow: 1px 1px 1px green;
+  }
+  /*Corps de page*/
+  #part1 h1
+  {
+    font-size: 15px;
+  }
+  #aboutMe
+  {
+    margin: 5px 18px 10px 18px;
+  }
+  .linkTxt a
+  {
+    border: 2px ridge aquamarine;
+    padding: 1px 4px;
+    font-size: 13px;
+  }
+  #replay
+  {
+    margin: 9px 0 3px 0;
+  }
+  .fa-solid.fa-rotate
+  {
+    padding: 4px;
+    font-size: 13px;
+  }
+  #rpl
+  {
+    font-size: 8px;
+  }
+  /*Pied de page*/
+  #find
+  {
+    margin: 0 0;
+    font-size: 9px;
+  }
+  #linkFb, #linkLnkd, #linkGit
+  {
+    margin: 0 10px;
+  }
+  #fb, #lkn, #gthb
+  {
+    width: 19px;
+    height: 19px;
+  }
+  #concept
+  {
+    font-size: 8px;
+  }
+  #prod
+  {
+    font-size: 11px;
+  }
+  #concept span
+  {
+    margin-left: 0;
+    font-size: 5px;
+  }
+}
+@media all and (max-width: 385px)
+{
+  /*Entete de page*/
+  #head
+  {
+    flex-direction: column;
+  }
+  /*Corps de page*/
+  #part2
+  {
+    height: 55vw;
+  }
+  /*Pied de page*/
+  #foot
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  #findMe
+  {
+    width: 100%;
+    margin: 5px 0;
   }
   #fb, #lkn, #gthb 
   {
-    width: 21px;
-    height: 21px;
+    width: 15px;
+    height: 15px;
   }
-  #concept span 
+  #concept
   {
-    margin-left: -1px;
+    width: 100%;
   }
 }
