@@ -1,31 +1,30 @@
 body
 {
-  margin: auto auto;
-}
-#page
-{
-  display: flex;
-  flex-direction: column;
+  margin: 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 /*----------------------------*/
 /*-----| ENTETE DE PAGE |-----*/
 /*----------------------------*/
 header
 {
+  /* background-color: red; */
+  height: 15%;
   background: linear-gradient(green, #fff);
 }
 #head
 {
+  height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 10px 0 40px 0;
 }
 .name
 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
   font-family: 'New Tegomin', serif;
   font-weight: bold;
@@ -33,17 +32,17 @@ header
 .hdrp
 {
   margin: 0 0;
-  font-size: 60px;
+  font-size: 3.8vw;
 }
 #career
 {
-  background-color: white;
-  padding: 0 9px;
-  border-radius: 30px;
   font-family: 'Black Ops One', sans-serif;
 }
 #career p
 {
+  background-color: white;
+  padding: 1px 15px;
+  border-radius: 30px;
   color: #7dcf7d;
   text-shadow: 2px 2px 2px green;
 }
@@ -53,84 +52,39 @@ header
 /*GENERALITÉ*/
 #middle
 {
-  display: flex;
-  flex-direction: column;
-  margin: 3px 0 5px 0;
+  height: 70%;
 }
-/*1ERE PARTIE : TEXTE DESCRIPTION*/
+/*1ère PARTIE : TEXTE DESCRIPTION*/
 #history
 {
   display: flex;
+  flex-direction: column;
+  height: 80%;
   background: linear-gradient(to bottom, white 1%, aquamarine 50%, white);
 }
 #part1
 {
   display: flex;
   flex-direction: column;
-  flex: 1 40%;
-  border: 7px ridge aquamarine;
+  flex: 0 22%;
+  border: 0.5vw ridge aquamarine;
 }
-#part1 h1
+h1
 {
-  margin: 5px 0;
-  font-size: 35px;
+  margin: 0 0 2vw 0;
   text-align: center;
-}
-h1 p 
-{
-  display: flex;
-  flex-direction: column;
+  font-size: 2.1vw;
 }
 #aboutMe
 {
-  margin: 55px 28px 100px 28px;
-  font-size: 1.6vw;
-  line-height: 1.62vw;
+  margin: 0 1.9vw 1.2vw 1.9vw;
+  font-size: 1.2vw;
   text-align: justify;
 }
-#replay
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 40px 0;
-}
-#rpl
-{
-  margin: 2px auto;
-  font-size: 15px;
-  text-align: justify;
-}
-#intro
-{
-  position: relative;
-  border-radius: 45px;
-  background: green;
-  transition: 0.7s ease-in-out;
-}
-.fa-solid.fa-rotate
-{
-  padding: 11px;
-  text-decoration: none;
-  color: black;
-  font-size: 45px;
-  transition: 0.7s ease-in-out;
-}
-#intro:hover
-{
-  background: #d52801;
-}
-.fa-solid.fa-rotate:hover
-{
-  color: white;
-  transform: rotate(360deg);
-}
-/*2ÈME PATIE : ICON - LIENS*/
+/*2ème PATIE : ICON - LIENS*/
 #part2
 {
-  display: flex;
-  width: 100%;
+  flex: 0 75%;
   background-image: url("../images/circuit.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -138,36 +92,73 @@ h1 p
 }
 #icon
 {
-  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .linkTxt
 {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 30%;
 }
 .linkTxt a
 {
-  border: 7px ridge aquamarine;
-  padding: 13px 18px;
+  position: relative;
   font-family: 'Black Ops One', sans-serif;
-  font-size: 43px;
   text-decoration: none;
+  font-size: 2.3vw;
   color: aquamarine;
   text-shadow: 2px 2px 1px white;
   transition: 0.5s;
 }
 .linkTxt a:hover 
 {
-  color: white;
-  text-shadow: 2px 2px 2px #00e1e1;
-  background-color: aquamarine;
   border: 5px solid white;
   border-radius: 35px;
   box-shadow: 3px 3px 1px white, 6px 6px 6px aqua, 6px 6px 12px aqua, 6px 6px 24px #00dfdf;
+  color: white;
+  padding: 3px 10px;
+  text-shadow: 2px 2px 2px #00e1e1;
+  background-color: aquamarine;
+}
+/*3ème PARTIE : RETOUR DE PAGE*/
+#replay
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+}
+#intro
+{
+  border-radius: 3vw;
+  background: green;
+  transition: 0.7s ease-in-out;
+}
+#intro:hover
+{
+  background: #d52801;
+}
+.fa-solid.fa-rotate
+{
+  text-decoration: none;
+  color: black;
+  font-size: 1.9vw;
+  padding: 0.9vw;
+  transition: 0.5s ease-in-out;
+}
+.fa-solid.fa-rotate:hover
+{
+  color: white;
+  transform: rotate(360deg);
+}
+#rpl
+{
+  margin: 0.1vw 0;
+  font-size: 0.8vw;
 }
 /*------------------------*/
 /*-----|PIED DE PAGE|-----*/
@@ -175,8 +166,7 @@ h1 p
 /* Généralité */
 footer
 {
-  display: flex;
-  justify-content: center;
+  height: 15%;
   background: linear-gradient(white, green);
 }
 #foot
@@ -184,349 +174,46 @@ footer
   display: flex;
   flex-direction: column;
 }
-#findMe/* Où suis je ? */
+/*PARTIE CONTACT*/
+#findMe
 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 38px 0;
+  margin: 0.7vw 0;
 }
 #find
 {
-  margin:0 10px;
-  font-size: 28px;
+  margin:0 0;
+  font-size: 1.2vw;
 }
 #linkFb, #linkLnkd, #linkGit
 {
-  display: flex;
-  align-items: center;
-  margin:0 15px;
+  margin:0 15px 0 15px;
 }
 #fb, #lkn, #gthb
 {
-  width: 41px;
-  height: 41px;
+  width: 1.5vw;
+  height: 1.5vw;
 }
-#concept/* production */
+/*PARTIE PRODUCTION*/
+#conception
 {
-  margin: 0 auto;
-  font-size: 27px;
+  display: flex;
+  justify-content: center;
 }
-#concept span 
+#concept
 {
-  margin-left: -9px;
-  font-size: 13px;
+  margin: 0 0;
+  font-size: 1.2vw;
 }
 #prod
 {
-  margin-left: 5px;
   font-family: 'Black Ops One', sans-serif;
-  font-size: 37px;
+  font-size: 1.5vw;
   font-weight: normal;
   color: white;
 }
 /*------------------------*/
 /*-----| RESPONSIVE |-----*/
 /*------------------------*/
-@media all and (max-width: 1370px)
-{
-  /*Entete de page*/
-  #head
-  {
-    margin: 10px 0 30px 0;
-  }
-  .hdrp
-  {
-    font-size: 45px;
-  }
-  /*Corps de page*/
-  .linkTxt a /*part2*/
-  {
-    font-size: 31px;
-  }
-  .fa-solid.fa-rotate
-  {
-    padding: 9px;
-    font-size: 40px;
-  }
-  #replay
-  {
-    margin: 45px 0;
-  }
-  /*footer*/
-  #foot
-  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  #findMe
-  {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-  }
-  #find
-  {
-    font-size: 21px;
-  }
-  #concept
-  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    font-size: 15px;
-  }
-  #prod
-  {
-    font-size: 21px;
-  }
-  #concept span 
-  {
-    margin-left: 1px;
-    font-size: 11px;
-  }
-}
-@media all and (max-width: 1050px)
-{
-  /*Entete de page*/
-  .hdrp
-  {
-    font-size: 22px;
-  }
-  /*Corps de page*/
-  #part1 h1
-  {
-    font-size: 27px;
-  }
-  .linkTxt a /*part2*/
-  {
-    border: 4px ridge aquamarine;
-    font-size: 20px;
-    text-shadow: 1px 1px 1px white;
-  }
-  .fa-solid.fa-rotate
-  {
-    font-size: 29px;
-  }
-  #rpl
-  {
-    font-size: 12px;
-  }
-  /*Pied de page*/
-  #foot
-  {
-    flex-direction: row;
-  }
-  #find
-  {
-    font-size: 16px;
-  }
-  #fb, #lkn, #gthb
-  {
-    width: 35px;
-    height: 35px;
-  }
-}
-@media all and (max-width: 890px)
-{
-  /*Entete de page*/
-  #head
-  {
-    margin: 5px 0 15px 0;
-  }
-  /*Corps de page*/
-  #history
-  {
-    flex-direction: column;
-  }
-  #part1
-  {
-    border: 3px ridge aquamarine;
-  }
-  #part1 h1
-  {
-    font-size: 19px;
-  }
-  #aboutMe
-  {
-    margin: 5px 28px 20px 28px;
-  }
-  #part2
-  {
-    height: 26vw;
-  }
-  #icon
-  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .linkTxt a
-  {
-    padding: 3px 8px;
-  }
-  #replay
-  {
-    margin: 12px 0;
-  }
-  .fa-solid.fa-rotate
-  {
-    padding: 8px;
-    font-size: 23px;
-  }
-  #rpl
-  {
-    font-size: 10px;
-  }
-  /*Pied de page*/
-  footer 
-  {
-    height: 50px;
-  }
-  #find
-  {
-    font-size: 13px;
-  }
-  #fb, #lkn, #gthb
-  {
-    width: 25px;
-    height: 25px;
-  }
-  #concept
-  {
-    font-size: 11px;
-  }
-  #prod
-  {
-    margin-left: 2px;
-    font-size: 15px;
-  }
-  #concept span
-  {
-    margin-left: 1px;
-    font-size: 9px;
-  }
-}
-@media all and (max-width: 525px)
-{
-  /*Entete de page*/
-  .hdrp
-  {
-    font-size: 13px;
-  }
-  #head
-  {
-    margin: 5px 0 10px 0;
-  }
-  #career p
-  {
-    text-shadow: 1px 1px 1px green;
-  }
-  /*Corps de page*/
-  #part1 h1
-  {
-    font-size: 15px;
-  }
-  #aboutMe
-  {
-    margin: 5px 18px 10px 18px;
-  }
-  .linkTxt a
-  {
-    border: 2px ridge aquamarine;
-    padding: 1px 4px;
-    font-size: 13px;
-  }
-  #replay
-  {
-    margin: 9px 0 3px 0;
-  }
-  .fa-solid.fa-rotate
-  {
-    padding: 4px;
-    font-size: 13px;
-  }
-  #rpl
-  {
-    font-size: 8px;
-  }
-  /*Pied de page*/
-  #find
-  {
-    margin: 0 0;
-    font-size: 9px;
-  }
-  #linkFb, #linkLnkd, #linkGit
-  {
-    margin: 0 10px;
-  }
-  #fb, #lkn, #gthb
-  {
-    width: 19px;
-    height: 19px;
-  }
-  #concept
-  {
-    font-size: 8px;
-  }
-  #prod
-  {
-    font-size: 11px;
-  }
-  #concept span
-  {
-    margin-left: 0;
-    font-size: 5px;
-  }
-}
-@media all and (max-width: 385px)
-{
-  /*Entete de page*/
-  #head
-  {
-    flex-direction: column;
-  }
-  .hdrp
-  {
-    font-size: 15px;
-  }
-  /*Corps de page*/
-  #aboutMe
-  {
-    font-size: 3.5vw;
-    line-height: 3.52vw;
-  }
-  #part2
-  {
-    height: 55vw;
-  }
-  /*Pied de page*/
-  footer
-  {
-    height: 70px;
-  }
-  #foot
-  {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  #findMe
-  {
-    width: 100%;
-    margin: 5px 0;
-  }
-  #fb, #lkn, #gthb 
-  {
-    width: 15px;
-    height: 15px;
-  }
-  #concept
-  {
-    width: 100%;
-  }
-}
