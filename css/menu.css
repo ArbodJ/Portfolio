@@ -58,7 +58,6 @@ header
 #history
 {
   display: flex;
-  flex-direction: column;
   height: 80%;
   background: linear-gradient(to bottom, white 1%, aquamarine 50%, white);
 }
@@ -71,14 +70,15 @@ header
 }
 h1
 {
-  margin: 0 0 2vw 0;
+  height: 10%;
   text-align: center;
   font-size: 2.1vw;
 }
 #aboutMe
 {
-  margin: 0 1.9vw 1.2vw 1.9vw;
-  font-size: 1.2vw;
+  display: flex;
+  height: 90%;
+  font-size: 20px;
   text-align: justify;
 }
 /*2ème PATIE : ICON - LIENS*/
@@ -173,6 +173,8 @@ footer
 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 /*PARTIE CONTACT*/
 #findMe
@@ -217,3 +219,78 @@ footer
 /*------------------------*/
 /*-----| RESPONSIVE |-----*/
 /*------------------------*/
+@media screen and (max-width: 970px)
+{
+  /*-----Corps de page-----*/
+  /*1ère PARTIE : TEXTE DESCRIPTION*/
+  #history
+  {
+    flex-direction: column;
+  }
+  #aboutMe
+  {
+    font-size: 1.6vw;
+  }
+  /*2ème PATIE : ICON - LIENS*/
+  .linkTxt a 
+  {
+    font-size: 3.2vw;
+    text-shadow: 1px 1px 1px white;
+  }
+  /*3ème PARTIE : RETOUR DE PAGE*/
+  #rpl
+  {
+    font-size: 1vw;
+  }
+  /*-----Pied de page-----*/
+  /*PARTIE CONTACT*/
+  #find
+  {
+    font-size: 1.8vw;
+  }
+  #fb, #lkn, #gthb
+  {
+    width: 2.3vw;
+    height: 2.3vw;
+  }
+}
+@media screen and (max-width: 600px)
+{
+  /*-----Entete de page-----*/
+  /* #head
+  {
+    flex-direction: column;
+  } */
+  #career p 
+  {
+    text-shadow: 1px 1px 1px green;
+  }
+  /*-----Corps de page-----*/
+  /*1ère PARTIE : TEXTE DESCRIPTION*/
+  h1 
+  {
+    font-size: 2.7vw;
+  }
+  #aboutMe 
+  {
+    font-size: 1.85vw;
+  }
+  /*3ème PARTIE : RETOUR DE PAGE*/
+  .fa-solid.fa-rotate
+  {
+    font-size: 2.5vw;
+    padding: 1.3vw;
+  }
+  #rpl
+  {
+    font-size: 1.3vw;
+  }
+}
+@media screen and (max-width: 370px)
+{
+  .fa-solid.fa-rotate
+  {
+    font-size: 2.5vw;
+    padding: 1.3vw;
+  }
+}
