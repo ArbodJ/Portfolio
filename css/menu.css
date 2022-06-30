@@ -288,9 +288,48 @@ footer
 }
 @media screen and (max-width: 370px)
 {
+  /*-----Entete de page-----*/
+  #head
+  {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hdrp
+  {
+    font-size: 3.8vw;
+  }
+  /*3ème PARTIE : RETOUR DE PAGE*/
+  #intro
+  {
+    border-radius: 4.7vw;
+  }
   .fa-solid.fa-rotate
   {
-    font-size: 2.5vw;
-    padding: 1.3vw;
+    font-size: 4.7vw;
+    padding: 1.7vw;
+  }
+  #rpl
+  {
+    font-size: 1.8vw;
+  }
+  /*-----Pied de page-----*/
+  /*PARTIE CONTACT*/
+  #find
+  {
+    font-size: 1.9vw;
+  }
+  #fb, #lkn, #gthb
+  {
+    width: 4.3vw;
+    height: 4.3vw;
+  }
+  /*PARTIE PRODUCTION*/
+  #concept
+  {
+    font-size: 1.6vw;
+  }
+  #prod
+  {
+    font-size: 1.8vw;
   }
 }
