@@ -4,6 +4,35 @@ body
   margin: 0 auto;
   background-color: #d9efff;
 }
+#return
+{
+  position: fixed;
+  top: 27vw;
+  right: 0;
+  bottom: 0%;
+  left: 2vw;
+  display: flex;
+  width: 50px;
+  height: 0;
+}
+#intro
+{
+  margin: 0 0;
+  padding: 0 0;
+  text-decoration: none;
+}
+.fa-solid.fa-circle-arrow-left
+{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-size: 2vw;
+}
+#return p 
+{
+  font-size: 0.7vw;
+  margin: 0 0;
+}
 #page
 {
   z-index: 1;
@@ -110,7 +139,12 @@ section
 }
 #project p
 {
+  font-size: 1vw;
   margin-left: 25px;
+}
+#exp
+{
+  margin-bottom: 12.2vw;
 }
 /*RESPONSIVE*/
 @media screen and (max-width: 1290px)
@@ -126,6 +160,10 @@ section
   #xp h2
   {
     font-size: 2.9vw;
+  }
+  #project p
+  {
+    font-size: 1.4vw;
   }
 }
 @media screen and (max-width: 1100px)
@@ -143,6 +181,10 @@ section
 }
 @media screen and (max-width: 780px)
 {
+  #return
+  {
+    top: 42vw;
+  }
   #page
   {
     border-radius: 15px;
@@ -180,20 +222,50 @@ section
   {
     font-size: 1.7vw;
   }
+  #project p 
+  {
+    font-size: 1.7vw;
+  }
   h1
-{
-  color: var(--main-color1);
-  text-shadow: 2px 2px 1px var(--main-color);
-}
+  {
+    color: var(--main-color1);
+    text-shadow: 2px 2px 1px var(--main-color);
+  }
   #xp h2
   {
     color: var(--main-color1);
     text-shadow: 2px 2px 1px var(--main-color);
   }
   #project h2
+  {
+    color: var(--main-color1);
+    text-shadow: 2px 2px 1px var(--main-color);
+  }
+}
+@media screen and (max-width: 580px)
 {
-  color: var(--main-color1);
-  text-shadow: 2px 2px 1px var(--main-color);
+  #return
+  {
+    top: 35vw;
+  }
+  section 
+  {
+    flex-direction: column;
+  }
+  #me
+  {
+    flex-direction: row;
+  }
+  ul 
+  {
+    margin: 5px 0;
+  }
+  #xp h2 
+  {
+    margin: 0 0;
+  }
+  #xp li 
+  {
+    line-height: 3.6vw;
+  }
 }
-}
-
