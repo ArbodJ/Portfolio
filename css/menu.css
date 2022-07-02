@@ -1,3 +1,8 @@
+*
+{
+  margin: 0 0;
+  padding: 0 0;
+}
 body
 {
   margin: 0 0;
@@ -78,16 +83,14 @@ h1
   display: flex;
   height: 90%;
   font-size: 20px;
+  margin: 55px 5px 0 5px;
   text-align: justify;
 }
 /*2ème PATIE : ICON - LIENS*/
 #part2
 {
-  flex: 0 75%;
-  background-image: url("../images/circuit.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  flex: 0 77%;
+  background: url("../images/circuit.jpg") center / cover no-repeat;
 }
 #icon
 {
@@ -228,7 +231,8 @@ footer
   }
   #aboutMe
   {
-    font-size: 1.6vw;
+    margin: 15px 5px 0 5px;
+    font-size: 1.7vw;
   }
   /*2ème PATIE : ICON - LIENS*/
   .linkTxt a 

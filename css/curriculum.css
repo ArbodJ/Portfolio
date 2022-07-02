@@ -1,3 +1,8 @@
+*
+{
+  margin: 0 0;
+  padding: 0 0;
+}
 body
 {
   margin: 0 0;
@@ -63,10 +68,11 @@ header
 /*LIENS CV*/
 #linkCv
 {
-  background-image: url('../images/thumb-1920-856404.png');
+  /* background-image: url('../images/thumb-1920-856404.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 95.5%;
+  background-size: cover; */
+  background: url('../images/thumb-1920-856404.png') center / cover no-repeat;
   height: 80%; 
   display: flex;
   flex-direction: row;
@@ -139,9 +145,9 @@ header
   height: 2vw;
   width: 2vw;
   padding: 0.9vw;
+  font-size: 1.8vw;
   text-decoration: none;
   color: black;
-  font-size: 1.8vw;
   transition: 0.7s ease-in-out;
 }
 #intro:hover, #main:hover
@@ -228,10 +234,17 @@ footer
   {
     height: 75%;
   }
-  .fa-solid.fa-rotate, .fa-solid.fa-house
+  .fa-solid.fa-rotate 
   {
-    padding: 9px;
-    font-size: 29px;
+    padding: 0.9vw;
+    font-size: 2vw;
+  }
+  .fa-solid.fa-house
+  {
+    height: 2.3vw;
+    width: 2.3vw;
+    padding: 0.9vw;
+    font-size: 2vw;
   }
 }
 @media screen and (max-width: 900px)
@@ -270,13 +283,20 @@ footer
   }
   .linkClick p 
   {
-    margin: 20px;
-    font-size: 35px;
+    margin: 15px;
+    font-size: 23px;
   }
-  .fa-solid.fa-rotate, .fa-solid.fa-house
+  .fa-solid.fa-rotate
   {
-    padding: 8px;
-    font-size: 17px;
+    padding: 0.9vw;
+    font-size: 3.3vw;
+  }
+  .fa-solid.fa-house
+  {
+    height: 3.3vw;
+    width: 3.3vw;
+    padding: 0.9vw;
+    font-size: 2.9vw;
   }
   #replay p, #information p
   {
@@ -285,30 +305,50 @@ footer
   /*-----|PIED DE PAGE|-----*/
   #find
   {
-    font-size: 17px;
+    font-size: 12px;
+  }
+  #findMe
+  {
+    margin: 1.7vw 0 0 0;
   }
   #fb, #lkn, #gthb
   {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
   }
   #concept
   {
-    font-size: 15px;
+    font-size: 12px;
   }
   #prod
   {
     margin-left: 0;
-    font-size: 25px;
+    font-size: 17px;
   }
   #concept span
   {
     margin-left: -6px;
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 415px)
 {
+  .linkClick p
+  {
+    font-size: 23px;
+  }
+  .fa-solid.fa-rotate
+  {
+    padding: 1vw;
+    font-size: 3.3vw;
+  }
+  .fa-solid.fa-house
+  {
+    height: 3.5vw;
+    width: 3.5vw;
+    padding: 1vw;
+    font-size: 3.1vw;
+  }
   /*-----|PIED DE PAGE|-----*/
   #find
   {
@@ -332,5 +372,20 @@ footer
   {
     margin-left: -4px;
     font-size: 8px;
+  }
+}
+@media screen and (max-width: 315px)
+{
+  .fa-solid.fa-rotate
+  {
+    padding: 2vw;
+    font-size: 4.3vw;
+  }
+  .fa-solid.fa-house
+  {
+    height: 4.3vw;
+    width: 4.3vw;
+    padding: 2vw;
+    font-size: 3.9vw;
   }
 }
