@@ -18,7 +18,7 @@ body
 header
 {
   height: 15%;
-  background: linear-gradient(green, #ba8514);
+  background: linear-gradient(green, #281d06);
 }
 #head
 {
@@ -65,7 +65,7 @@ header
   display: flex;
   flex-direction: column;
 }
-/*LIENS CV*/
+/*1ère PARTIE : LIENS CV*/
 #linkCv
 {
   background: url('../images/thumb-1920-856404.png') center / cover no-repeat;
@@ -93,27 +93,27 @@ header
   color: #7dcf7d;
   text-shadow: 2px 2px 1px green;
   box-shadow: 3px 3px 7px green;
-  /* border: 5px double #7dcf7d; */
   border-radius: 0 0 45px 0;
   text-decoration: none;
   transition: 0.7s ease-in-out;
 }
 .linkClick a:hover
 {
-  color: white;
-  text-shadow: 2px 2px 2px #00dede;
-  background-color: aquamarine;
-  border: 3px solid white;
+  color: #5d440c;
+  text-shadow: 2px 2px 2px #dca42d;
+  background-color: #fde1a4;
+  border: 3px solid #dca42d;
   border-radius: 105px;
-  box-shadow: 3px 3px 1px white, 6px 6px 3px aqua, 6px 6px 12px aqua, 6px 6px 24px #00dfdf;
+  box-shadow: 3px 3px 1px yellow, 6px 6px 3px #ffff6f, 6px 6px 12px #ffff9a, 6px 6px 24px #ffffba;
 }
-#linkPage/*block bas*/
+/*2ème PARTIE : RETOUR DE PAGE*/
+#linkPage
 {
   height: 20%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(to top, green, #de9d0f);
+  background: linear-gradient(to top, green, #281d06);
 }
 #replay, #information /*Liens de retours pages precedentes*/
 {
@@ -124,7 +124,6 @@ header
 #intro, #main
 {
   position: relative;
-  border: 1px solid black;
   border-radius: 45px;
   background: green;
   transition: 0.7s ease-in-out;
@@ -246,29 +245,66 @@ footer
 }
 @media screen and (max-width: 900px)
 {
+  /*Entete de page*/
+  #career p 
+  {
+    padding: 0 13px;
+  }
+  .hdrp
+  {
+    font-size: 2.9vw;
+  }
+  /*Corps de page*/
+  /*1ère PARTIE : LIENS CV*/
+  .linkClick p 
+  {
+    margin: 19px;
+    font-size: 35px;
+  }
+  /*2ème PARTIE : RETOUR DE PAGE*/
+  .fa-solid.fa-rotate
+  {
+    padding: 0.8vw;
+    font-size: 1.8vw;
+  }
+  .fa-solid.fa-house
+  {
+    height: 1.8vw;
+    width: 1.8vw;
+    padding: 0.8vw;
+    font-size: 1.9vw;
+  }
+  #replay p, #information p
+  {
+    font-size: 10px;
+  }
   /*-----|PIED DE PAGE|-----*/
+  #findMe
+  {
+    margin: 0.7vw 0 0 0;
+  }
   #find
   {
-    font-size: 23px;
+    font-size: 12px;
   }
   #fb, #lkn, #gthb
   {
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
   }
   #concept
   {
-    font-size: 15px;
+    font-size: 12px;
   }
   #prod
   {
     margin-left: 0;
-    font-size: 25px;
+    font-size: 15px;
   }
   #concept span
   {
     margin-left: -6px;
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 600px)
