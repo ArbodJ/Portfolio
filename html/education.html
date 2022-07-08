@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/04bc3baa55.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/study.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Kaushan+Script&family=New+Tegomin&display=swap" rel="stylesheet">
-    <title>Acceuil</title>
+    <title>parcour</title>
   </head>
   <body>
     <header>
@@ -26,24 +26,21 @@
       </section>
     </header>
     <main id="middle">
-      <section id="history">
-        <div id="part1">
-          <h1></h1>
-          <p id="aboutMe">
-            Autodidacte depuis 2014, j'avais comme projet de créer un site e-commerce, dans le cadre de mon activité professionnelle. Je me suis pris au jeu et je me suis decouvert, un intérêt grandissant pour le codage. Suite à une reconvertion professionnelle, j'ai éffectué une formation chez openclassrooms, comme Développeur web, de Juin 2021 à Fevrier 2022.
-          </p>
+      <h1></h1>
+      <div id="slider">
+        <img src="../images/certifWeb.jpg" alt="certification" id="slide">
+        <div id="precedent" onclick="ChangeSlide(-1)"> < </div>
+        <div id="suivant" onclick="ChangeSlide(1)"> > </div>
+      </div>
+      <div id="linkPage">
+        <div id="replay">
+          <a href="index.html" id="intro"><i class="fa-solid fa-rotate"></i></a>
+          <p id="rpl">Revoir l'intro</p> 
         </div>
-        <div id="part2">
-          <div id="icon">
-            <div class="linkTxt"><a href="curriculumVitae.html">CV</a></div>
-            <div class="linkTxt"><a href="skill.html">Compétences</a></div>
-            <div class="linkTxt"><a href="education.html">Parcour</a></div>
-          </div>
+        <div id="information">
+          <a href="main.html" id="main"><i class="fa-solid fa-house"></i></a>
+          <p id="info">Retour à l'acceuil</p>
         </div>
-      </section>
-      <div id="replay">
-        <a href="index.html" id="intro"><i class="fa-solid fa-rotate"></i></a>
-        <p id="rpl">Revoir l'intro</p> 
       </div>
     </main>
     <footer>
@@ -58,8 +55,8 @@
           <p id="concept">Design & conception :<strong id="prod"> A.J.Issa Poduction</strong>&copy</p>
         </div>
       </section>
+      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+      <script src="../javascript/slide.js"></script>
     </footer>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="../javascript/mainAnim.js"></script>
   </body>
 </html>

@@ -18,7 +18,7 @@ body
 header
 {
   height: 15%;
-  background: linear-gradient(green, #fff);
+  background: linear-gradient(green, aquamarine);
 }
 #head
 {
@@ -71,6 +71,7 @@ header
   flex-direction: column;
   flex: 0 22%;
   border: 0.5vw ridge aquamarine;
+  background: linear-gradient(to right, #0071ff, aquamarine);
 }
 h1
 {
@@ -133,6 +134,7 @@ h1
   align-items: center;
   justify-content: center;
   height: 20%;
+  background: linear-gradient(to top, green, aquamarine);
 }
 #intro
 {
@@ -169,7 +171,7 @@ h1
 footer
 {
   height: 15%;
-  background: linear-gradient(white, green);
+  background: linear-gradient(to top, #6eff6e, green);
 }
 #foot
 {

@@ -3,7 +3,9 @@
   margin: 0 0;
   padding: 0 0;
 }
-body{
+body
+{
+  margin: 0 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -16,13 +18,12 @@ body{
 header
 {
   height: 15%;
-  background: linear-gradient(green, #1b1b1b);
+  background: linear-gradient(green, #fff);
 }
 #head
 {
   height: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
@@ -52,96 +53,81 @@ header
 /*---------------------------*/
 /*-----| CORPS DE PAGE |-----*/
 /*---------------------------*/
-/*Généralité*/
-#middlePage
+/*GENERALITÉ*/
+#middle
 {
   height: 70%;
+  background: linear-gradient(to bottom, white 1%, aquamarine 50%, white);
 }
-#content
+/*1ère PARTIE : SLIDE*/
+#history
 {
-  height: 100%;
-}
-#linkSkill
-{
+  display: flex;
   height: 80%;
-  background: url('../images/fondCode.png') center / cover no-repeat;
+  background: linear-gradient(to bottom, white 1%, aquamarine 50%, white);
 }
-#language, #hardware
+#part1
 {
   display: flex;
   flex-direction: column;
-  height: 50%;
+  flex: 0 22%;
+  border: 0.5vw ridge aquamarine;
 }
-/*1ere PARTIE : Language*/
-#langFig
+h1
 {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-  justify-items: center;
+  height: 10%;
+  text-align: center;
+  font-size: 2.1vw;
 }
-.block
-{
+#slider {
+  position: relative;
+  width: 50%;
+  height: 71%;
+  margin: auto;
   display: flex;
-  width: 170px;
-  background: #e7e7e7;
-  border-radius: 20px 5px;
-}
-.linkFig
-{
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
-  width: 100%;
 }
-.linkFig img
+#slide
 {
   display: flex;
-}
-figcaption
-{
-  display: flex;
-}
-figcaption p 
-{
-  color: #a335e7;
-}
-figcaption strong
-{
-  color: #c82020;
-}
-/*2eme PARTIE : Logiciels*/
-.mainTitle
-{
   width: 100%;
-  font-size: 3vw;
-  font-weight: initial;
-  text-align: center;
-  color: #a335e7;
-  text-shadow: 2px 2px 1px #ff0040;
-  font-family: 'Black Ops One', sans-serif;
-}
-#hardFig
-{
   height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  align-items: center;
-  justify-items: center;
 }
-/*3eme PARTIE : Liens retour*/
+#precedent,
+#suivant 
+{
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  position: absolute;
+  font-size: 41px;
+  color: rgba(220, 220, 220, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0;
+}
+
+#precedent 
+{
+  left: 0;
+}
+
+#suivant {
+  right: 0;
+}
+
+#slider:hover #precedent,
+#slider:hover #suivant 
+{
+  opacity: 1;
+}
+/*2ème PARTIE : RETOUR DE PAGE*/
 #linkPage/*block bas*/
 {
   height: 20%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(to top, green, #1b1b1b);
 }
 #replay, #information /*Liens de retours pages precedentes*/
 {
@@ -192,10 +178,11 @@ figcaption strong
 /*------------------------*/
 /*-----|PIED DE PAGE|-----*/
 /*------------------------*/
+/* Généralité */
 footer
 {
   height: 15%;
-  background: linear-gradient(to top, white, green);
+  background: linear-gradient(white, green);
 }
 #foot
 {

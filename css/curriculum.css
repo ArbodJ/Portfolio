@@ -18,7 +18,7 @@ body
 header
 {
   height: 15%;
-  background: linear-gradient(green, #fff);
+  background: linear-gradient(green, #ba8514);
 }
 #head
 {
@@ -68,10 +68,6 @@ header
 /*LIENS CV*/
 #linkCv
 {
-  /* background-image: url('../images/thumb-1920-856404.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
   background: url('../images/thumb-1920-856404.png') center / cover no-repeat;
   height: 80%; 
   display: flex;
@@ -117,6 +113,7 @@ header
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background: linear-gradient(to top, green, #de9d0f);
 }
 #replay, #information /*Liens de retours pages precedentes*/
 {
@@ -170,7 +167,7 @@ header
 footer
 {
   height: 15%;
-  background: linear-gradient(white, green);
+  background: linear-gradient(to top, white, green);
 }
 #foot
 {
