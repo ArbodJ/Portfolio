@@ -86,7 +86,7 @@ header
 {
   display: flex;
   width: 170px;
-  background: #e7e7e7;
+  background: #282828;
   border-radius: 20px 5px;
 }
 .linkFig
@@ -243,4 +243,97 @@ footer
   font-size: 1.5vw;
   font-weight: normal;
   color: white;
+}
+/*------------------------*/
+/*-----| RESPONSIVE |-----*/
+/*------------------------*/
+@media screen and (max-width: 1300px)
+{
+  /* Corps de page */
+  /*1ere PARTIE */
+  .block
+  {
+    width: 150px;
+  }
+  .linkFig img 
+  {
+    width: 25px;
+    height: 25px;
+  }
+  figcaption p 
+  {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 780px)
+{
+  /* Corps de page */
+  /*1ere PARTIE */
+  .block
+  {
+    width: 120px;
+  }
+  .linkFig img 
+  {
+    width: 20px;
+    height: 20px;
+  }
+  figcaption p 
+  {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 580px)
+{
+  /* Corps de page */
+  /*1ere PARTIE */
+  .block
+  {
+    width: 90px;
+  }
+  .linkFig img 
+  {
+    width: 17px;
+    height: 17px;
+  }
+  figcaption p 
+  {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 580px)
+{
+  /* Corps de page */
+  /*1ere PARTIE */
+  .block
+  {
+    width: 70px;
+  }
+  .linkFig img 
+  {
+    width: 14px;
+    height: 14px;
+  }
+  figcaption p 
+  {
+    font-size: 6px;
+  }
+}
+@media screen and (max-width: 325px)
+{
+  /* Corps de page */
+  /*1ere PARTIE */
+  .block
+  {
+    width: 50px;
+  }
+  .linkFig img 
+  {
+    width: 11px;
+    height: 11px;
+  }
+  figcaption p 
+  {
+    font-size: 4px;
+  }
 }
