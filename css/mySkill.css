@@ -305,18 +305,54 @@ footer
 {
   /* Corps de page */
   /*1ere PARTIE */
+  .mainTitle
+  {
+    font-size: 2.3vw;
+    text-shadow: 1px 1px 1px #ff0040
+  }
   .block
   {
     width: 70px;
   }
   .linkFig img 
   {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
   }
   figcaption p 
   {
-    font-size: 6px;
+    font-size: 5px;
+  }
+  /*2eme PARTIE*/
+  #replay, #information
+  {
+    height: 100%;
+  }
+  #replay p, #information p
+  {
+    font-size: 7px;
+  }
+  .fa-solid.fa-rotate
+  {
+    padding: 0.7vw;
+    font-size: 2.3vw;
+  }
+  .fa-solid.fa-house
+  {
+    height: 2.3vw;
+    width: 2.3vw;
+    padding: 0.7vw;
+    font-size: 2.1vw;
+  }
+  /*Pied de page*/
+  #findMe
+  {
+    margin: 0.7vw 0 0 0;
+  }
+  #fb, #lkn, #gthb
+  {
+    width: 1.7vw;
+    height: 1.7vw;
   }
 }
 @media screen and (max-width: 325px)
