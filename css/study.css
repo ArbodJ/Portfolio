@@ -231,3 +231,43 @@ footer
   font-weight: normal;
   color: white;
 }
+@media screen and (max-width: 580px)
+{
+  h1 
+    {
+      height: 5%;
+      font-size: 1.7vw;
+    }
+    #slider
+    {
+      width: 70%;
+    }
+    #replay p, #information p
+    {
+      font-size: 9px;
+    }
+    #fb, #lkn, #gthb
+    {
+      width: 1.7vw;
+      height: 1.7vw;
+    }
+}
+@media screen and (max-width: 325px)
+{
+  #slider
+  {
+    width: 95%;
+  }
+  .fa-solid.fa-rotate
+  {
+    padding: 0.7vw;
+    font-size: 5vw;
+  }
+  .fa-solid.fa-house
+  {
+    height: 5.2vw;
+    width: 5.2vw;
+    padding: 1vw;
+    font-size: 5.2vw;
+  }
+}

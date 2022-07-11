@@ -7,15 +7,15 @@ const textAnim = document.querySelector('h1');
 new Typewriter(textAnim, {
   loop: true
 })
-.typeString('Mon parcour ')
+.typeString('Mes quêtes et ')
 .pauseFor(300)
-.deleteChars(12)
+.deleteChars(15)
 .pauseFor(300)
-.typeString('depuis')
+.typeString('mes defis relevés')
 .pauseFor(300)
-.deleteChars(6)
+.deleteChars(17)
 .pauseFor(300)
-.typeString('2014 à aujourd\'hui !')
+.typeString('depuis 2014 !')
 .pauseFor(1000)
 .start()
 /**

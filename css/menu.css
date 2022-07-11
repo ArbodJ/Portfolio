@@ -231,6 +231,10 @@ footer
   {
     flex-direction: column;
   }
+  #part1
+  {
+    background: linear-gradient(to bottom, #0071ff, aquamarine);
+  }
   #aboutMe
   {
     margin: 15px 5px 0 5px;
