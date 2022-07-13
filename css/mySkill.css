@@ -46,8 +46,8 @@ header
   background-color: white;
   padding: 1px 15px;
   border-radius: 30px;
-  color: #7dcf7d;
-  text-shadow: 2px 2px 2px green;
+  color: green;
+  text-shadow: 2px 2px 2px #7dcf7d;
 }
 /*---------------------------*/
 /*-----| CORPS DE PAGE |-----*/
@@ -86,7 +86,7 @@ header
 {
   display: flex;
   width: 170px;
-  background: #282828;
+  background: #F5F5F5;
   border-radius: 20px 5px;
 }
 .linkFig
@@ -112,7 +112,7 @@ figcaption p
 }
 figcaption strong
 {
-  color: #c82020;
+  color: #8D1616;
 }
 /*2eme PARTIE : Logiciels*/
 .mainTitle
@@ -121,7 +121,7 @@ figcaption strong
   font-size: 3vw;
   font-weight: initial;
   text-align: center;
-  color: #a335e7;
+  color: #862187;
   text-shadow: 2px 2px 1px #ff0040;
   font-family: 'Black Ops One', sans-serif;
 }

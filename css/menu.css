@@ -47,8 +47,8 @@ header
   background-color: white;
   padding: 1px 15px;
   border-radius: 30px;
-  color: #7dcf7d;
-  text-shadow: 2px 2px 2px green;
+  color: green;
+  text-shadow: 2px 2px 2px #7dcf7d;
 }
 /*---------------------------*/
 /*-----| CORPS DE PAGE |-----*/
