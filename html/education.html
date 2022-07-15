@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Page du parcour effectué">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/04bc3baa55.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/study.css">
@@ -26,12 +27,27 @@
       </div>
     </header>
     <main id="middle">
-      <h1>_</h1>
-      <div id="slider">
-        <img src="../images/certifWeb.jpg" alt="certification" id="slide">
-        <div id="precedent" onclick="ChangeSlide(-1)"> &lt; </div>
-        <div id="suivant" onclick="ChangeSlide(1)"> > </div>
+      <div id="slide">
+        <h1>Ma quête et mes défis réussis depuis 2014.</h1>
+      <div class="contenu-carrousel">
+        <div class="carrousel">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
+      <div class="controle">
+        <button onclick="carrousel('-')">❮</button>
+        <button onclick="carrousel('')">❯</button>
+      </div>
+      </div>
+      
       <div id="linkPage">
         <div id="replay">
           <a href="index.html" id="intro"><i class="fa-solid fa-rotate"></i></a>

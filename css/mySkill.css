@@ -85,18 +85,15 @@ header
 .block
 {
   display: flex;
-  width: 170px;
+  width: 195px;
   background: #F5F5F5;
-  border-radius: 20px 5px;
+  border-radius: 0 10px 5px 5px;
 }
 .linkFig
 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-decoration: none;
-  width: 100%;
 }
 .linkFig img
 {
@@ -105,9 +102,13 @@ header
 figcaption
 {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 figcaption p 
 {
+  font-size: 20px;
   color: #a335e7;
 }
 figcaption strong
@@ -312,7 +313,17 @@ footer
   }
   .block
   {
-    width: 70px;
+    width: 100px;
+  }
+  #langFig
+  {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  #hardFig
+  {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   .linkFig img 
   {
@@ -321,7 +332,7 @@ footer
   }
   figcaption p 
   {
-    font-size: 5px;
+    font-size: 12px;
   }
   /*2eme PARTIE*/
   #replay, #information
@@ -330,7 +341,7 @@ footer
   }
   #replay p, #information p
   {
-    font-size: 7px;
+    font-size: 12px;
   }
   .fa-solid.fa-rotate
   {
