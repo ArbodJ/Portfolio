@@ -16,4 +16,4 @@ function carrousel(sign)
   }
   spinner.setAttribute("style","transform:rotateY("+ angle +"deg);")
 }
-setInterval("carrousel(1)", 4000);
+// setInterval("carrousel(1)", 10000);

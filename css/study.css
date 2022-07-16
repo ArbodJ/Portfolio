@@ -104,7 +104,7 @@ button
   width: 100%;
   position: absolute;
   transform-style: preserve-3d;
-  transition: transform 1s; 
+  transition: transform 5.5s; 
 }
 .carrousel div 
 {
@@ -158,7 +158,7 @@ button
 .carrousel div:nth-child(9) 
 {
   transform: rotateY(320deg) translateZ(430px);
-  background:url(/images/p4validation.png) center/cover no-repeat;  
+  background:url(/images/p5validation.png) center/cover no-repeat;  
 }
 /*2ème PARTIE : RETOUR DE PAGE*/
 #linkPage/*block bas*/
