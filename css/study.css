@@ -93,8 +93,8 @@ button
 .contenu-carrousel 
 {
   margin: 5rem auto;
-  width: 300px;
-  height: 200px;
+  width: 17vw;
+  height: 10vw;
   position: relative;
   perspective: 1000px   
 }
@@ -104,7 +104,7 @@ button
   width: 100%;
   position: absolute;
   transform-style: preserve-3d;
-  transition: transform 5.5s; 
+  transition: transform 1.7s; 
 }
 .carrousel div 
 {
@@ -117,48 +117,48 @@ button
 }
 .carrousel div:nth-child(1) 
 {
-  transform: rotateY(0) translateZ(430px);
-  background:url(/images/certifWeb.jpg) center/cover no-repeat; 
+  transform: rotateY(0) translateZ(25vw);
+  background:url(../images/certifWeb.jpg) center/cover no-repeat; 
 }
 .carrousel div:nth-child(2) 
 {
-  transform: rotateY(40deg) translateZ(430px);
-  background:url(/images/certificationlinux.jpg) center/cover no-repeat;  
+  transform: rotateY(40deg) translateZ(25vw);
+  background:url(../images/certificationlinux.jpg) center/cover no-repeat;  
 }
 .carrousel div:nth-child(3) 
 {
-  transform: rotateY(80deg) translateZ(430px);
-  background:url(/images/certificationhtmlcss.jpg) center/cover no-repeat;  
+  transform: rotateY(80deg) translateZ(25vw);
+  background:url(../images/certificationhtmlcss.jpg) center/cover no-repeat;  
 }
 .carrousel div:nth-child(4) 
 {
-  transform: rotateY(120deg) translateZ(430px);
-  background:url(/images/certification.jpg) center/cover no-repeat;  
+  transform: rotateY(120deg) translateZ(25vw);
+  background:url(../images/certification.jpg) center/cover no-repeat;  
 }
 .carrousel div:nth-child(5) 
 {
-  transform: rotateY(160deg) translateZ(430px);
-  background:url(/images/p1validation.png) center/cover no-repeat;  
+  transform: rotateY(160deg) translateZ(25vw);
+  background:url(../images/p1validation.png) center/cover no-repeat;  
 }
 .carrousel div:nth-child(6) 
 {
-  transform: rotateY(200deg) translateZ(430px);
-  background:url(/images/p2validation.png) center/cover no-repeat;  
+  transform: rotateY(200deg) translateZ(25vw);
+  background:url(../images/p2validation.png) center/cover no-repeat;  
 }
 .carrousel div:nth-child(7) 
 {
-  transform: rotateY(240deg) translateZ(430px);
-  background:url(/images/p3validation.png) center/cover no-repeat;  
+  transform: rotateY(240deg) translateZ(25vw);
+  background:url(../images/p3validation.png) center/cover no-repeat;  
 }
 .carrousel div:nth-child(8) 
 {
-  transform: rotateY(280deg) translateZ(430px);
-  background:url(/images/p4validation.png) center/cover no-repeat;  
+  transform: rotateY(280deg) translateZ(25vw);
+  background:url(../images/p4validation.png) center/cover no-repeat;  
 }
 .carrousel div:nth-child(9) 
 {
-  transform: rotateY(320deg) translateZ(430px);
-  background:url(/images/p5validation.png) center/cover no-repeat;  
+  transform: rotateY(320deg) translateZ(25vw);
+  background:url(../images/p5validation.png) center/cover no-repeat;  
 }
 /*2ème PARTIE : RETOUR DE PAGE*/
 #linkPage/*block bas*/
