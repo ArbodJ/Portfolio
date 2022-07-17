@@ -64,35 +64,30 @@ header
 {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 80%;
-}
-h1
-{
-  height: 20%;
-  text-align: center;
-  font-size: 2.1vw;
 }
 .controle
 {
   display: grid;
-  grid: 2rem/repeat(2,1fr);
   justify-items: center;
+  grid: 1.7vw/repeat(2,1fr);
 }
 button
 { 
   display: grid;
-  font-size: 1.5rem;
+  font-size: 1.2vw;
   color: white;
   border: none;
   border-radius: 9px;
   cursor: pointer;
   background: linear-gradient(to top, blue 1%, aqua 77%);
   height: 100%;
-  width: 35px;
+  width: 3.7vw;
 } 
 .contenu-carrousel 
 {
-  margin: 5rem auto;
+  margin: auto;
   width: 17vw;
   height: 10vw;
   position: relative;
