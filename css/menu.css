@@ -63,7 +63,6 @@ header
 {
   display: flex;
   height: 80%;
-  /* background: linear-gradient(to bottom, white 1%, aquamarine 50%, white); */
 }
 #part1
 {
@@ -232,9 +231,9 @@ footer
 {
   /*-----Entete de page----*/
   header
-{
-  background: linear-gradient(green, #0071ff);
-}
+  {
+    background: linear-gradient(green, #0071ff);
+  }
   /*-----Corps de page-----*/
   /*1ère PARTIE : TEXTE DESCRIPTION*/
   #history
@@ -280,10 +279,6 @@ footer
 @media screen and (max-width: 600px)
 {
   /*-----Entete de page-----*/
-  /* #head
-  {
-    flex-direction: column;
-  } */
   #career p 
   {
     text-shadow: 1px 1px 1px green;
@@ -306,7 +301,6 @@ footer
   .fa-solid.fa-rotate
   {
     font-size: 2.5vw;
-    padding: 1.3vw;
   }
   #rpl
   {
@@ -330,38 +324,37 @@ footer
   {
     flex-direction: column;
   }
-  /*3ème PARTIE : RETOUR DE PAGE*/
-  #intro
+  .linkTxt a 
   {
-    border-radius: 4.7vw;
+    font-size: 4.1vw;
   }
+  /*3ème PARTIE : RETOUR DE PAGE*/
   .fa-solid.fa-rotate
   {
-    font-size: 4.7vw;
-    padding: 1.7vw;
+    font-size: 5.7vw;
   }
   #rpl
   {
-    font-size: 1.8vw;
+    font-size: 2.8vw;
   }
   /*-----Pied de page-----*/
   /*PARTIE CONTACT*/
   #find
   {
-    font-size: 1.9vw;
+    font-size: 2.9vw;
   }
   #fb, #lkn, #gthb
   {
-    width: 4.3vw;
-    height: 4.3vw;
+    width: 4.4vw;
+    height: 4.4vw;
   }
   /*PARTIE PRODUCTION*/
   #concept
   {
-    font-size: 1.6vw;
+    font-size: 2.9vw;
   }
   #prod
   {
-    font-size: 1.8vw;
+    font-size: 3.2vw;
   }
 }
