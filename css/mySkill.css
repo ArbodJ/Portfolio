@@ -16,7 +16,7 @@ body{
 header
 {
   height: 15%;
-  background: linear-gradient(green, #1b1b1b);
+  background: linear-gradient(green, aquamarine);
 }
 #head
 {
@@ -64,7 +64,7 @@ header
 #linkSkill
 {
   height: 80%;
-  background: url('../images/fondCode.png') center / cover no-repeat;
+  background: url('../images/circuit.jpg') center / cover no-repeat;
 }
 #language, #hardware
 {
@@ -142,53 +142,39 @@ figcaption strong
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(to top, green, #1b1b1b);
+  background: linear-gradient(to top, green, aquamarine);
 }
-#replay, #information /*Liens de retours pages precedentes*/
+#replay, #information
 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-#intro, #main
+#intro , #main
 {
-  position: relative;
-  border: 1px solid black;
-  border-radius: 45px;
-  background: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   transition: 0.7s ease-in-out;
 }
-.fa-solid.fa-rotate 
+.fa-solid.fa-rotate, .fa-solid.fa-house
 {
-  padding: 0.9vw;
   text-decoration: none;
   color: black;
-  font-size: 2vw;
-  transition: 0.7s ease-in-out;
+  font-size: 1.9vw;
+  transition: 0.5s ease-in-out;
 }
-.fa-solid.fa-house
+#rpl, #info
 {
-  height: 2vw;
-  width: 2vw;
-  padding: 0.9vw;
-  font-size: 1.8vw;
-  text-decoration: none;
   color: black;
-  transition: 0.7s ease-in-out;
-}
-#intro:hover, #main:hover
-{
-  background: red;
+  font-size: 0.8vw;
 }
 .fa-solid.fa-rotate:hover, .fa-solid.fa-house:hover
 {
-  color: white;
   transform: rotate(360deg);
-}
-#replay p, #information p
-{
-  margin: 0;
-  font-size: 12px;
+  color: #a30000;
 }
 /*------------------------*/
 /*-----|PIED DE PAGE|-----*/

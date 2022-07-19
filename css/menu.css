@@ -18,7 +18,7 @@ body
 header
 {
   height: 15%;
-  background: linear-gradient(green, aquamarine);
+  background: linear-gradient(green, #1b1b1b);
 }
 #head
 {
@@ -63,35 +63,43 @@ header
 {
   display: flex;
   height: 80%;
-  background: linear-gradient(to bottom, white 1%, aquamarine 50%, white);
+  /* background: linear-gradient(to bottom, white 1%, aquamarine 50%, white); */
 }
 #part1
 {
   display: flex;
   flex-direction: column;
-  flex: 0 22%;
-  border: 0.5vw ridge aquamarine;
-  background: linear-gradient(to right, #0071ff, aquamarine);
+  flex: 0 23%;
+  /* border: 0.5vw ridge #1b1b1b; */
+  background: linear-gradient(to right, #0071ff, #1b1b1b);
 }
 h1
 {
   height: 10%;
   text-align: center;
+  color: #7dcf7d;
+  font-family: 'New Tegomin', serif;
   font-size: 2.1vw;
 }
 #aboutMe
 {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   height: 90%;
-  font-size: 20px;
-  margin: 55px 5px 0 5px;
+  margin: 0 25px 0 25px;
   text-align: justify;
+}
+.aboutMe
+{
+  font-size: 1.3vw;
+  color: aqua;
 }
 /*2ème PATIE : ICON - LIENS*/
 #part2
 {
   flex: 0 77%;
-  background: url("../images/circuit.jpg") center / cover no-repeat;
+  background: url("../images/fondCode.png") center / cover no-repeat;
 }
 #icon
 {
@@ -134,35 +142,32 @@ h1
   align-items: center;
   justify-content: center;
   height: 20%;
-  background: linear-gradient(to top, green, aquamarine);
+  background: linear-gradient(to top, green, #1b1b1b);
 }
 #intro
 {
-  border-radius: 3vw;
-  background: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   transition: 0.7s ease-in-out;
-}
-#intro:hover
-{
-  background: #d52801;
 }
 .fa-solid.fa-rotate
 {
   text-decoration: none;
   color: black;
   font-size: 1.9vw;
-  padding: 0.9vw;
   transition: 0.5s ease-in-out;
-}
-.fa-solid.fa-rotate:hover
-{
-  color: white;
-  transform: rotate(360deg);
 }
 #rpl
 {
-  margin: 0.1vw 0;
+  color: black;
   font-size: 0.8vw;
+}
+.fa-solid.fa-rotate:hover
+{
+  transform: rotate(360deg);
+  color: #a30000;
 }
 /*------------------------*/
 /*-----|PIED DE PAGE|-----*/
@@ -186,7 +191,7 @@ footer
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0.7vw 0;
+  margin: 0.6vw 0 0 0;
 }
 #find
 {
@@ -225,6 +230,11 @@ footer
 /*------------------------*/
 @media screen and (max-width: 970px)
 {
+  /*-----Entete de page----*/
+  header
+{
+  background: linear-gradient(green, #0071ff);
+}
   /*-----Corps de page-----*/
   /*1ère PARTIE : TEXTE DESCRIPTION*/
   #history
@@ -233,11 +243,15 @@ footer
   }
   #part1
   {
-    background: linear-gradient(to bottom, #0071ff, aquamarine);
+    background: linear-gradient(to bottom, #0071ff, #1b1b1b);
   }
   #aboutMe
   {
     margin: 15px 5px 0 5px;
+    
+  }
+  .aboutMe
+  {
     font-size: 1.7vw;
   }
   /*2ème PATIE : ICON - LIENS*/
@@ -283,6 +297,10 @@ footer
   #aboutMe 
   {
     font-size: 1.85vw;
+  }
+  .linkTxt a
+  {
+    font-size: 2.4vw;
   }
   /*3ème PARTIE : RETOUR DE PAGE*/
   .fa-solid.fa-rotate
