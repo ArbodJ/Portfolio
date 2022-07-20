@@ -16,7 +16,7 @@ body{
 header
 {
   height: 15%;
-  background: linear-gradient(green, aquamarine);
+  background: linear-gradient(green, #1ecaca);
 }
 #head
 {
@@ -85,9 +85,26 @@ header
 .block
 {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 195px;
-  background: #F5F5F5;
-  border-radius: 0 10px 5px 5px;
+  background: #1ecaca;
+  border-radius: 0 10px 0 10px;
+  box-shadow: -3px 3px 3px white;
+}
+.border
+{
+  display: flex;
+  justify-content: center;
+  margin: 3px 3px 0 3px;
+  width: 185px;
+  border: 3px solid #101010;
+  border-radius: 0 10px 0 0;
+}
+.block img
+{
+  width: 50px;
+  height: 50px;
 }
 .linkFig
 {
@@ -104,16 +121,20 @@ figcaption
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  margin: 0 3px 3px 3px;
+  width: 191px;
+  border-radius: 0 0 0 10px;
+  background: #101010;
 }
 figcaption p 
 {
   font-size: 20px;
-  color: #a335e7;
+  color: #1ecaca;
 }
 figcaption strong
 {
-  color: #8D1616;
+  font-family: 'New Tegomin', serif;
+  color: white;
 }
 /*2eme PARTIE : Logiciels*/
 .mainTitle
@@ -122,8 +143,8 @@ figcaption strong
   font-size: 3vw;
   font-weight: initial;
   text-align: center;
-  color: #862187;
-  text-shadow: 2px 2px 1px #ff0040;
+  color: green;
+  text-shadow: 2px 2px 1px white;
   font-family: 'Black Ops One', sans-serif;
 }
 #hardFig
@@ -142,7 +163,7 @@ figcaption strong
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(to top, green, aquamarine);
+  background: linear-gradient(to top, green, #1ecaca);
 }
 #replay, #information
 {
