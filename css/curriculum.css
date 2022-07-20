@@ -84,27 +84,33 @@ header
 }
 .linkClick p 
 {
-  margin: 25px;
-  font-size: 55px;
+  font-family: 'New Tegomin', serif;
+  padding: 1vw;
+  font-size: 3vw;
+}
+.linkClick p:hover 
+{
+  font-size: 2.9vw;
 }
 .linkClick a
 {
   font-weight: bold;
-  color: #7dcf7d;
-  text-shadow: 2px 2px 1px green;
-  box-shadow: 3px 3px 7px green;
-  border-radius: 0 0 45px 0;
+  background-color: #fde1a4;
+  color: #5d440c;
+  text-shadow: 2px 2px 1px #dca42d;
+  box-shadow: 3px 3px 3px #dca42d;
+  border-radius: 105px;
   text-decoration: none;
-  transition: 0.7s ease-in-out;
+  /* transition: 0.7s ease-in-out; */
 }
 .linkClick a:hover
 {
   color: #5d440c;
   text-shadow: 2px 2px 2px #dca42d;
-  background-color: #fde1a4;
-  border: 3px solid #dca42d;
+  background-color: #fbd88c;
+  border: 3px solid #5d440c;
   border-radius: 105px;
-  box-shadow: 3px 3px 1px yellow, 6px 6px 3px #ffff6f, 6px 6px 12px #ffff9a, 6px 6px 24px #ffffba;
+  box-shadow: 3px 3px 1px #dca42d, 6px 6px 3px #dca42d, 6px 6px 12px #ffff9a, 6px 6px 24px #ffffba;
 }
 /*2ème PARTIE : RETOUR DE PAGE*/
 #linkPage
