@@ -323,8 +323,29 @@ footer
   /*1ere PARTIE */
   .mainTitle
   {
-    font-size: 2.7vw;
+    font-size: 2.4vw;
     text-shadow: 1px 1px 1px white;
+  }
+  .border
+  {
+    width: 4vw;
+    border-radius: 3px 0 0 3px;
+    box-shadow: -1px 1px 1px white;
+  }
+  .block img 
+  {
+    width: 2.3vw;
+    height: 2.3vw;
+  }
+  figcaption
+  {
+    width: 11vw;
+    border-radius: 0 5px 5px 0;
+    height: 2.3vw;
+  }
+  figcaption p 
+  {
+    font-size: 1.3vw;
   }
   /*2eme PARTIE*/
   #replay, #information
