@@ -251,6 +251,53 @@ footer
   font-weight: normal;
   color: white;
 }
+/*------------------------*/
+/*-----| RESPONSIVE |-----*/
+/*------------------------*/
+@media screen and (max-width: 1300px)
+{
+  .contenu-carrousel
+  {
+    width: 24vw;
+    height: 14vw;
+  }
+  .carrousel div:nth-child(1)
+  {
+    transform: rotateY(0) translateZ(34vw);
+  }
+  .carrousel div:nth-child(2)
+  {
+    transform: rotateY(40deg) translateZ(34vw);
+  }
+  .carrousel div:nth-child(3)
+  {
+    transform: rotateY(80deg) translateZ(34vw);
+  }
+  .carrousel div:nth-child(4)
+  {
+    transform: rotateY(120deg) translateZ(34vw);
+  }
+  .carrousel div:nth-child(5)
+  {
+    transform: rotateY(160deg) translateZ(34vw);
+  }
+  .carrousel div:nth-child(6)
+  {
+    transform: rotateY(200deg) translateZ(34vw);
+  }
+  .carrousel div:nth-child(7)
+  {
+    transform: rotateY(240deg) translateZ(34vw);
+  }
+  .carrousel div:nth-child(8)
+  {
+    transform: rotateY(280deg) translateZ(34vw);
+  }
+  .carrousel div:nth-child(9)
+  {
+    transform: rotateY(320deg) translateZ(34vw);
+  }
+}
 @media screen and (max-width: 580px)
 {
   h1 
