@@ -352,21 +352,13 @@ footer
   {
     height: 100%;
   }
-  #replay p, #information p
+  .fa-solid.fa-rotate, .fa-solid.fa-house
   {
-    font-size: 12px;
-  }
-  .fa-solid.fa-rotate
-  {
-    padding: 0.7vw;
     font-size: 2.3vw;
   }
-  .fa-solid.fa-house
+  #rpl, #info
   {
-    height: 2.3vw;
-    width: 2.3vw;
-    padding: 0.7vw;
-    font-size: 2.1vw;
+    font-size: 0.8vw;
   }
   /*Pied de page*/
   #findMe
@@ -379,7 +371,45 @@ footer
     height: 1.7vw;
   }
 }
-/* @media screen and (max-width: 325px)
+@media screen and (max-width: 325px)
 {
-  
-} */
+  /*Entete de page*/
+  #head
+  {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .hdrp
+  {
+    font-size: 4.7vw;
+  }
+  /*Corps de page*/
+  /*1ere PARTIE */
+  .mainTitle
+  {
+    font-size: 6.3vw;
+  }
+  .block
+  {
+    width: 19vw;
+  }
+  .block img 
+  {
+    width: 6vw;
+    height: 6vw;
+  }
+  .border
+  {
+    width: 6vw;
+  }
+  figcaption
+  {
+    height: 6vw;
+  }
+  figcaption p
+  {
+    font-size: 1.7vw;
+  }
+  /*2eme PARTIE*/
+  /*Pied de page*/
+}
