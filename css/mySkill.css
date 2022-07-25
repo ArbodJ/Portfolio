@@ -410,6 +410,31 @@ footer
   {
     font-size: 1.7vw;
   }
-  /*2eme PARTIE*/
-  /*Pied de page*/
+  /*2ème PARTIE : RETOUR DE PAGE*/
+  .fa-solid.fa-rotate, .fa-solid.fa-house
+  {
+    font-size: 4.2vw;
+  }
+  #rpl, #info 
+  {
+    font-size: 1.9vw;
+  }
+  /* Pied de page */
+  #find 
+  {
+    font-size: 2.2vw;
+  }
+  #linkFb, #linkLnkd, #linkGit 
+  {
+    margin: 0 8px 0 8px;
+  }
+  #fb, #lkn, #gthb 
+  {
+    width: 3.7vw;
+    height: 3.7vw;
+  }
+  #concept
+  {
+    font-size: 2.2vw;
+  }
 }
