@@ -157,7 +157,7 @@ button
   background:url(../images/p5validation.png) center/cover no-repeat;  
 }
 /*2ème PARTIE : RETOUR DE PAGE*/
-#linkPage/*block bas*/
+#linkPage
 {
   height: 20%;
   display: flex;
@@ -257,6 +257,8 @@ footer
 /*------------------------*/
 @media screen and (max-width: 1300px)
 {
+  /* Corps de page */
+  /*1ère PARTIE : SLIDE*/
   .contenu-carrousel
   {
     width: 24vw;
@@ -301,15 +303,8 @@ footer
 }
 @media screen and (max-width: 580px)
 {
-  h1 
-  {
-    height: 5%;
-    font-size: 1.7vw;
-  }
-  #slider
-  {
-    width: 70%;
-  }
+  /* Corps de page */
+  /*1ère PARTIE : SLIDE*/
   .contenu-carrousel 
   {
     width: 23vw;
@@ -352,32 +347,75 @@ footer
   {
     transform: rotateY(320deg) translateZ(45vw);
   }
-    #replay p, #information p
-    {
-      font-size: 9px;
-    }
-    #fb, #lkn, #gthb
-    {
-      width: 1.7vw;
-      height: 1.7vw;
-    }
+  /*2ème PARTIE : RETOUR DE PAGE*/
+  #replay p, #information p
+  {
+    font-size: 9px;
+  }
+  /* Pied de page */
+  #fb, #lkn, #gthb
+  {
+    width: 1.7vw;
+    height: 1.7vw;
+  }
 }
 @media screen and (max-width: 325px)
 {
-  #slider
+  /* Corps de page */
+  /*1ère PARTIE : SLIDE*/
+  .contenu-carrousel 
   {
-    width: 95%;
+    width: 27vw;
+    height: 16vw;
+    perspective: 250px;
   }
-  .fa-solid.fa-rotate
+  .carrousel div:nth-child(1)
   {
-    padding: 0.7vw;
-    font-size: 5vw;
+    transform: rotateY(0) translateZ(48vw);
   }
-  .fa-solid.fa-house
+  .carrousel div:nth-child(2)
   {
-    height: 5.2vw;
-    width: 5.2vw;
-    padding: 1vw;
-    font-size: 5.2vw;
+    transform: rotateY(40deg) translateZ(48vw);
   }
+  .carrousel div:nth-child(3)
+  {
+    transform: rotateY(80deg) translateZ(48vw);
+  }
+  .carrousel div:nth-child(4)
+  {
+    transform: rotateY(120deg) translateZ(48vw);
+  }
+  .carrousel div:nth-child(5)
+  {
+    transform: rotateY(160deg) translateZ(48vw);
+  }
+  .carrousel div:nth-child(6)
+  {
+    transform: rotateY(200deg) translateZ(48vw);
+  }
+  .carrousel div:nth-child(7)
+  {
+    transform: rotateY(240deg) translateZ(48vw);
+  }
+  .carrousel div:nth-child(8)
+  {
+    transform: rotateY(280deg) translateZ(48vw);
+  }
+  .carrousel div:nth-child(9)
+  {
+    transform: rotateY(320deg) translateZ(48vw);
+  }
+  .controle
+  {
+    grid: 2.3vw/repeat(2,1fr);
+  }
+  button 
+  {
+    width: 4.7vw;
+  }
+  /*2ème PARTIE : RETOUR DE PAGE*/
+  .fa-solid.fa-rotate, .fa-solid.fa-house
+{
+  font-size: 4.2vw;
+}
 }
