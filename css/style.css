@@ -180,13 +180,13 @@
     opacity: 1;
     left: -1580px;
     top: -350px;
-    color: orange;
-    text-shadow: 2px 2px 3px red;
+    color: #0b7b0b;
+    text-shadow: 2px 2px 1px white;
   }
   11%{
     transform: scale(1,1);
-    color: orangered;
-    text-shadow: 2px 2px 3px maroon;
+    color: #04ff9b;
+    text-shadow: 2px 2px 1px #0b7b0b;
   }
   17%{
     transform: scale(1,1);
@@ -200,50 +200,50 @@
   }
   22%{
     transform: scale(1,1);
-    color: orange;
-    text-shadow: 2px 2px 3px red;
+    color: #0b7b0b;
+    text-shadow: 2px 2px 1px white;
   }
   33%{
     transform: scale(1,1);
-    color: orangered;
-    text-shadow: 2px 2px 3px orange;
+    color: #04ff9b;
+    text-shadow: 2px 2px 1px #0b7b0b;
   }
   40%{
     transform: scale(1,1);
-    color: orange;
-    text-shadow: 2px 2px 3px red;
+    color: #0b7b0b;
+    text-shadow: 2px 2px 1px white;
   }
   44%{
     transform: scale(1,1);
-    color: orangered;
-    text-shadow: 2px 2px 3px orange;
+    color: #04ff9b;
+    text-shadow: 2px 2px 1px #0b7b0b;
   }
   55%{
     transform: scale(1,1);
-    color: orange;
-    text-shadow: 2px 2px 3px red;;
+    color: #0b7b0b;
+    text-shadow: 2px 2px 1px white;
   }
   66%{
     transform: scale(1,1);
-    color: orangered;
-    text-shadow: 2px 2px 3px orange;
+    color: #04ff9b;
+    text-shadow: 2px 2px 1px #0b7b0b;
   }
   77%{
     transform: scale(1,1);
-    color: orange;
-    text-shadow: 2px 2px 3px red;
+    color: #0b7b0b;
+    text-shadow: 2px 2px 1px white;
   }
   88%{
     transform: scale(1,1);
     opacity: 1;
-    color: orangered;
-    text-shadow: 2px 2px 3px orange;
+    color: #04ff9b;
+    text-shadow: 2px 2px 1px #0b7b0b;
   }
   99.9%{
     transform: scale(0,0);
     opacity: 0;
-    color: orange;
-    text-shadow: 2px 2px 3px red;
+    color: #0b7b0b;
+    text-shadow: 2px 2px 1px white;
   }
   100%{
     transform: scale(0,0);
@@ -315,13 +315,13 @@
     opacity: 1;
     right: -1580px;
     bottom: -250px;
-    color: yellow;
-    text-shadow: 2px 2px 3px orangered;
+    color: #0b7b0b;
+    text-shadow: 2px 2px 1px white;
   }
   11%{
     transform: scale(1,1);
-    color: orangered;
-    text-shadow: 3px 3px 5px yellow;
+    color: #04ff9b;
+    text-shadow: 3px 3px 1px #0b7b0b;
   }
   17%{
     transform: scale(1,1);
@@ -335,50 +335,50 @@
   }
   22%{
     transform: scale(1,1);
-    color: yellow;
-    text-shadow: 2px 2px 3px orangered;
+    color: #0b7b0b;
+    text-shadow: 2px 2px 1px white;
   }
   33%{
     transform: scale(1,1);
-    color: orangered;
-    text-shadow: 2px 2px 3px yellow;
+    color: #04ff9b;
+    text-shadow: 2px 2px 1px #0b7b0b;
   }
   40%{
     transform: scale(1,1);
-    color: yellow;
-    text-shadow: 2px 2px 3px orangered;
+    color: #0b7b0b;
+    text-shadow: 2px 2px 1px white;
   }
   44%{
     transform: scale(1,1);
-    color: orangered;
-    text-shadow: 2px 2px 3px yellow;
+    color: #04ff9b;
+    text-shadow: 2px 2px 1px #0b7b0b;
   }
   55%{
     transform: scale(1,1);
-    color: yellow;
-    text-shadow: 2px 2px 3px orangered;
+    color: #0b7b0b;
+    text-shadow: 2px 2px 1px white;
   }
   66%{
     transform: scale(1,1);
-    color: orangered;
-    text-shadow: 2px 2px 3px yellow;
+    color: #04ff9b;
+    text-shadow: 2px 2px 1px #0b7b0b;
   }
   77%{
     transform: scale(1,1);
-    color: yellow;
-    text-shadow: 2px 2px 3px orangered;
+    color: #0b7b0b;
+    text-shadow: 2px 2px 1px white;
   }
   88%{
     transform: scale(1,1);
     opacity: 1;
-    color: orangered;
-    text-shadow: 2px 2px 3px yellow;
+    color: #04ff9b;
+    text-shadow: 2px 2px 1px #0b7b0b;
   }
   99.9%{
     transform: scale(0,0);
     opacity: 0;
-    color: yellow;
-    text-shadow: 2px 2px 3px orangered;
+    color: #0b7b0b;
+    text-shadow: 2px 2px 1px white;
   }
   100%{
     transform: scale(0,0);
